@@ -54,7 +54,11 @@ export default function UnitConverter({ categories, units }: Props) {
   }, [inputVal, fromId, toId, units]);
   return (
     <div className="mx-auto max-w-5xl h-auto md:min-h-full flex flex-col gap-5 pb-10">
-      <img src="/new_logo.svg" alt="Converter Online" className="w-23 md:w-32 mx-auto" />
+      <img
+        src="/new_logo.svg"
+        alt="Converter Online"
+        className="w-23 md:w-35 mx-auto shadow-sm rounded-xl border p-1 bg-[#fbfbfb]"
+      />
       <div className="flex flex-col md:flex-row gap-5">
         <Card className="w-full md:w-[50%] flex flex-col gap-2 p-5 h-auto md:h-[65vh] bg-[#fbfbfb]">
           <Label className="text-base">Category</Label>
