@@ -154,9 +154,9 @@ export default function UnitConverter({ categories, units }: Props) {
           </div>
         </Card>
       </div>
-      <Card className="font-semibold flex flex-row gap-8 p-5 h-25 justify-center items-center bg-[#fafafa]">
+      {/* <Card className="font-semibold flex flex-row gap-8 p-5 h-25 justify-center items-center bg-[#fafafa]">
         <p>ADS AREA</p>
-      </Card>
+      </Card> */}
       <Card className="flex flex-col gap-6 p-5 bg-[#fafafa]">
         <div>
           <h2 className="font-medium text-xl mb-1 text-primary-foreground bg-primary capitalize w-fit pl-2 pr-3">
