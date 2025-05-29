@@ -207,11 +207,11 @@
 }
 
 ::-webkit-scrollbar {
-  width: 9px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--background);       
+  background: #fafafa;       
   border-radius: 100px;
 }
 
@@ -222,5 +222,5 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-emerald-600);          
+  background: var(--border);          
 }
