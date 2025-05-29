@@ -11,6 +11,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Label } from "@/components/ui/label";
+import Image from "next/image";
 
 interface Props {
   categories: Category[];
@@ -54,11 +55,14 @@ export default function UnitConverter({ categories, units }: Props) {
   }, [inputVal, fromId, toId, units]);
   return (
     <div className="mx-auto max-w-5xl h-auto md:min-h-full flex flex-col gap-5 pb-10">
-      <img
-        src="/new_logo.svg"
+      <Image
+        src="/logo.svg"
         alt="Converter Online"
+        width={130}
+        height={130}
+        quality={100}
         className="w-23 md:w-35 mx-auto shadow-sm rounded-xl border p-1 bg-[#fbfbfb]"
-      />
+      ></Image>
       <div className="flex flex-col md:flex-row gap-5">
         <Card className="w-full md:w-[50%] flex flex-col gap-2 p-5 h-auto md:h-[65vh] bg-[#fbfbfb]">
           <Label className="text-base">Category</Label>
@@ -66,12 +70,10 @@ export default function UnitConverter({ categories, units }: Props) {
             <SelectTrigger className="w-full cursor-pointer mb-2">
               <SelectValue />
             </SelectTrigger>
-            <SelectContent className="max-h-[35vh]">
+            <SelectContent className="max-h-[30vh]">
               {categories.map((c) => (
                 <SelectItem key={c.id} value={c.id} className="cursor-pointer p-1 m group">
-                  {/* <span className="text-xl my-[-2px] group-hover:bg-white/20 rounded-md">
-                    {c.logo}
-                  </span> */}
+                  <span className="text-xl group-hover:bg-white/50 rounded-md">{c.logo}</span>
                   <span className="font-medium capitalize">{c.name}</span>
                 </SelectItem>
               ))}
@@ -128,9 +130,9 @@ export default function UnitConverter({ categories, units }: Props) {
           <h2 className="text-xl font-medium">
             Units of{" "}
             <span className="capitalize">{categories.filter((x) => x.id == catId)[0].name}</span>
-            {/* <span className="ml-1 text-2xl rounded-md bg-foreground/50">
+            <span className="ml-1 text-2xl rounded-md">
               {categories.filter((x) => x.id == catId)[0].logo}
-            </span> */}
+            </span>
           </h2>
           <div className="flex flex-col grow overflow-y-auto">
             {unitsInCategory.map((u) => (

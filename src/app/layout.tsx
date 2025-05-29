@@ -2,7 +2,7 @@ import "@/app/globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Converter.Online",
+  title: "Converter.online",
   description:
     "Convert between over 500 units of length, mass, volume, pressure and more — fast, reliable & SEO‑friendly.",
   keywords: [
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     type: "website",
-    title: "Converter.Online",
+    title: "Converter.online",
     description: "Convert between over 500 units in one click.",
     url: "https://converter.online",
     images: [{ url: "/logo.png", width: 1200, height: 630, alt: "Converter Online" }],

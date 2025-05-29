@@ -56,7 +56,7 @@
   --secondary-foreground: #000000;
   --muted: #f0f0f0;
   --muted-foreground: #333333;
-  --accent: #3370cc;
+  --accent: #d65c5c;
   --accent-foreground: #ffffff;
   --destructive: #000000;
   --destructive-foreground: #ffffff;
@@ -72,7 +72,7 @@
   --sidebar-foreground: #000000;
   --sidebar-primary: #d65c5c;
   --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #3370cc;
+  --sidebar-accent: #d65c5c;
   --sidebar-accent-foreground: #ffffff;
   --sidebar-border: #000000;
   --sidebar-ring: #d65c5c;
@@ -103,7 +103,7 @@
   --secondary-foreground: #000000;
   --muted: #333333;
   --muted-foreground: #cccccc;
-  --accent: #5c99d6;
+  --accent: #d65c5c;
   --accent-foreground: #000000;
   --destructive: #ffffff;
   --destructive-foreground: #000000;
@@ -119,7 +119,7 @@
   --sidebar-foreground: #ffffff;
   --sidebar-primary: #e08585;
   --sidebar-primary-foreground: #000000;
-  --sidebar-accent: #5c99d6;
+  --sidebar-accent: #d65c5c;
   --sidebar-accent-foreground: #000000;
   --sidebar-border: #ffffff;
   --sidebar-ring: #e08585;
