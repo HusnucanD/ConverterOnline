@@ -11,6 +11,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Label } from "@/components/ui/label";
+import Image from "next/image";
 
 interface Props {
   categories: Category[];
@@ -54,20 +55,20 @@ export default function UnitConverter({ categories, units }: Props) {
   }, [inputVal, fromId, toId, units]);
   return (
     <div className="mx-auto max-w-5xl h-auto md:min-h-full flex flex-col gap-5 pb-10">
-      <img src="/logo.svg" alt="Units Ninja" className="w-23 md:w-28 mx-auto mb-2" />
+      <img src="/new_logo.svg" alt="Converter Online" className="w-23 md:w-32 mx-auto" />
       <div className="flex flex-col md:flex-row gap-5">
-        <Card className="w-full md:w-[50%] flex flex-col gap-2 p-5 h-auto md:h-[65vh]">
+        <Card className="w-full md:w-[50%] flex flex-col gap-2 p-5 h-auto md:h-[65vh] bg-[#fbfbfb]">
           <Label className="text-base">Category</Label>
           <Select value={catId} onValueChange={(e: any) => setCatId(e)}>
             <SelectTrigger className="w-full cursor-pointer mb-2">
               <SelectValue />
             </SelectTrigger>
-            <SelectContent className="max-h-[40vh]">
+            <SelectContent className="max-h-[35vh]">
               {categories.map((c) => (
                 <SelectItem key={c.id} value={c.id} className="cursor-pointer p-1 m group">
-                  <span className="text-xl my-[-2px] group-hover:bg-white/20 rounded-md">
+                  {/* <span className="text-xl my-[-2px] group-hover:bg-white/20 rounded-md">
                     {c.logo}
-                  </span>
+                  </span> */}
                   <span className="font-medium capitalize">{c.name}</span>
                 </SelectItem>
               ))}
@@ -116,17 +117,17 @@ export default function UnitConverter({ categories, units }: Props) {
             className="font-medium"
             onChange={(e) => setInputVal(e.target.value)}
           ></Input>
-          <div className="flex items-center justify-center text-xl font-bold font-mono rounded-md bg-primary text-primary-foreground mt-3 py-2 cursor">
+          <div className="flex items-center justify-center text-xl font-bold font-mono rounded-md bg-primary text-primary-foreground mt-3 py-2 cursor shadow">
             {outputVal}
           </div>
         </Card>
-        <Card className="w-full md:w-[50%] flex flex-col gap-2 p-5 h-[50vh] md:h-[65vh] ">
+        <Card className="w-full md:w-[50%] flex flex-col gap-2 p-5 h-[50vh] md:h-[65vh] bg-[#fbfbfb]">
           <h2 className="text-xl font-medium">
             Units of{" "}
             <span className="capitalize">{categories.filter((x) => x.id == catId)[0].name}</span>
-            <span className="ml-1 text-2xl rounded-md bg-foreground/50">
+            {/* <span className="ml-1 text-2xl rounded-md bg-foreground/50">
               {categories.filter((x) => x.id == catId)[0].logo}
-            </span>
+            </span> */}
           </h2>
           <div className="flex flex-col grow overflow-y-auto">
             {unitsInCategory.map((u) => (
@@ -146,8 +147,10 @@ export default function UnitConverter({ categories, units }: Props) {
           </div>
         </Card>
       </div>
-      <Card className="flex flex-col gap-8 p-5 h-25"></Card>
-      <Card className="flex flex-col gap-4 p-5">
+      <Card className="font-semibold flex flex-row gap-8 p-5 h-25 justify-center items-center bg-[#fbfbfb]">
+        <p>ADS AREA</p>
+      </Card>
+      <Card className="flex flex-col gap-4 p-5 bg-[#fbfbfb]">
         <div>
           <h2 className="font-medium text-xl mb-1 text-primary capitalize">
             {unitsInCategory.filter((u) => u.id == fromId)[0]?.name}
