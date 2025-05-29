@@ -61,10 +61,10 @@ export default function UnitConverter({ categories, units }: Props) {
         width={130}
         height={130}
         quality={100}
-        className="w-23 md:w-35 mx-auto shadow-sm rounded-xl border p-1 bg-[#fbfbfb]"
+        className="w-23 md:w-35 mx-auto shadow-sm rounded-xl border p-1 bg-[#fafafa]"
       ></Image>
       <div className="flex flex-col md:flex-row gap-5">
-        <Card className="w-full md:w-[50%] flex flex-col gap-2 p-5 h-auto md:h-[65vh] bg-[#fbfbfb]">
+        <Card className="w-full md:w-[50%] flex flex-col gap-2 p-5 h-auto md:h-[65vh] bg-[#fafafa]">
           <Label className="text-base">Category</Label>
           <Select value={catId} onValueChange={(e: any) => setCatId(e)}>
             <SelectTrigger className="w-full cursor-pointer mb-2">
@@ -126,7 +126,7 @@ export default function UnitConverter({ categories, units }: Props) {
             {outputVal}
           </div>
         </Card>
-        <Card className="w-full md:w-[50%] flex flex-col gap-2 p-5 h-[50vh] md:h-[65vh] bg-[#fbfbfb]">
+        <Card className="w-full md:w-[50%] flex flex-col gap-2 p-5 h-[50vh] md:h-[65vh] bg-[#fafafa]">
           <h2 className="text-xl font-medium">
             Units of{" "}
             <span className="capitalize">{categories.filter((x) => x.id == catId)[0].name}</span>
@@ -152,10 +152,10 @@ export default function UnitConverter({ categories, units }: Props) {
           </div>
         </Card>
       </div>
-      <Card className="font-semibold flex flex-row gap-8 p-5 h-25 justify-center items-center bg-[#fbfbfb]">
+      <Card className="font-semibold flex flex-row gap-8 p-5 h-25 justify-center items-center bg-[#fafafa]">
         <p>ADS AREA</p>
       </Card>
-      <Card className="flex flex-col gap-4 p-5 bg-[#fbfbfb]">
+      <Card className="flex flex-col gap-4 p-5 bg-[#fafafa]">
         <div>
           <h2 className="font-medium text-xl mb-1 text-primary capitalize">
             {unitsInCategory.filter((u) => u.id == fromId)[0]?.name}
