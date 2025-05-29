@@ -11,7 +11,6 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Label } from "@/components/ui/label";
-import Image from "next/image";
 
 interface Props {
   categories: Category[];
