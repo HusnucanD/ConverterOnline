@@ -73,7 +73,9 @@ export default function UnitConverter({ categories, units }: Props) {
             <SelectContent className="max-h-[30vh]">
               {categories.map((c) => (
                 <SelectItem key={c.id} value={c.id} className="cursor-pointer p-1 m group">
-                  <span className="text-xl group-hover:bg-white/50 rounded-md">{c.logo}</span>
+                  <span className="text-xl group-hover:bg-white/50 group-focus:bg-white/50 rounded-xl px-1">
+                    {c.logo}
+                  </span>
                   <span className="font-medium capitalize">{c.name}</span>
                 </SelectItem>
               ))}
@@ -87,7 +89,7 @@ export default function UnitConverter({ categories, units }: Props) {
             <SelectContent className="max-h-[40vh]">
               {unitsInCategory.map((u) => (
                 <SelectItem key={u.id} value={u.id} className="cursor-pointer group">
-                  <span className="font-semibold capitalize text-primary group-hover:text-accent-foreground">
+                  <span className="font-semibold capitalize text-primary group-hover:text-primary-foreground group-focus:text-primary-foreground">
                     {u.shortName}
                   </span>
                   <span className="font-medium capitalize">{u.name}</span>
@@ -107,7 +109,7 @@ export default function UnitConverter({ categories, units }: Props) {
                   value={u.id}
                   className="cursor-pointer hover:bg-accent group"
                 >
-                  <span className="font-semibold capitalize text-primary group-hover:text-accent-foreground">
+                  <span className="font-semibold capitalize text-primary group-hover:text-primary-foreground group-focus:text-primary-foreground">
                     {u.shortName}
                   </span>
                   <span className="font-medium capitalize">{u.name}</span>
@@ -122,7 +124,7 @@ export default function UnitConverter({ categories, units }: Props) {
             className="font-medium"
             onChange={(e) => setInputVal(e.target.value)}
           ></Input>
-          <div className="flex items-center justify-center text-xl font-bold font-mono rounded-md bg-primary text-primary-foreground mt-3 py-2 cursor shadow">
+          <div className="flex items-center justify-center text-xl font-bold font-mono rounded-md bg-primary text-primary-foreground mt-3 py-2 cursor shadow h-11">
             {outputVal}
           </div>
         </Card>
@@ -155,9 +157,9 @@ export default function UnitConverter({ categories, units }: Props) {
       <Card className="font-semibold flex flex-row gap-8 p-5 h-25 justify-center items-center bg-[#fafafa]">
         <p>ADS AREA</p>
       </Card>
-      <Card className="flex flex-col gap-4 p-5 bg-[#fafafa]">
+      <Card className="flex flex-col gap-6 p-5 bg-[#fafafa]">
         <div>
-          <h2 className="font-medium text-xl mb-1 text-primary capitalize">
+          <h2 className="font-medium text-xl mb-1 text-primary-foreground bg-primary capitalize w-fit pl-2 pr-3">
             {unitsInCategory.filter((u) => u.id == fromId)[0]?.name}
           </h2>
           <p className="text-base">
@@ -165,7 +167,7 @@ export default function UnitConverter({ categories, units }: Props) {
           </p>
         </div>
         <div>
-          <h2 className="font-medium text-xl mb-1 text-primary capitalize">
+          <h2 className="font-medium text-xl mb-1 text-primary-foreground bg-primary capitalize w-fit pl-2 pr-3">
             {unitsInCategory.filter((u) => u.id == toId)[0]?.name}
           </h2>
           <p className="text-base">{unitsInCategory.filter((u) => u.id == toId)[0]?.description}</p>
