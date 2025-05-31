@@ -1,6 +1,7 @@
 "use client";
 import { useMemo, useState, useEffect } from "react";
-import type { Category, Unit } from "@/app/model/types";
+import { toast } from "sonner";
+import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
 import {
@@ -11,7 +12,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Label } from "@/components/ui/label";
-import Image from "next/image";
+import type { Category, Unit } from "@/app/model/types";
 
 interface Props {
   categories: Category[];
@@ -53,6 +54,18 @@ export default function UnitConverter({ categories, units }: Props) {
       setOutputVal("Error");
     }
   }, [inputVal, fromId, toId, units]);
+  const copyToClipboard = () => {
+    navigator.clipboard
+      .writeText(outputVal)
+      .then(() => {
+        toast("Copied!", {
+          description: `${outputVal}`,
+        });
+      })
+      .catch(() => {
+        toast.error("Failed to Copy");
+      });
+  };
   return (
     <div className="mx-auto max-w-5xl h-auto md:min-h-full flex flex-col gap-5 pb-10">
       <Image
@@ -61,10 +74,10 @@ export default function UnitConverter({ categories, units }: Props) {
         width={130}
         height={130}
         quality={100}
-        className="w-23 md:w-35 mx-auto shadow-sm rounded-xl border p-1 bg-[#fafafa]"
+        className="w-23 md:w-35 mx-auto shadow-sm rounded-xl border p-1 bg-(--custom-card)"
       ></Image>
       <div className="flex flex-col md:flex-row gap-6">
-        <Card className="w-full md:w-[50%] flex flex-col gap-2 p-5 h-auto md:h-[65vh] bg-[#fafafa]">
+        <Card className="w-full md:w-[50%] flex flex-col gap-2 p-5 h-111 bg-(--custom-card)">
           <Label className="text-base font-semibold">Category</Label>
           <Select value={catId} onValueChange={(e: any) => setCatId(e)}>
             <SelectTrigger className="w-full cursor-pointer mb-2">
@@ -124,11 +137,14 @@ export default function UnitConverter({ categories, units }: Props) {
             className="font-semibold"
             onChange={(e) => setInputVal(e.target.value)}
           ></Input>
-          <div className="flex items-center justify-center text-xl font-bold font-mono rounded-md bg-primary text-primary-foreground mt-6 py-2 cursor shadow h-11">
+          <div
+            onClick={() => copyToClipboard()}
+            className="flex items-center justify-center text-xl font-bold rounded-md bg-primary text-primary-foreground mt-6 py-2 shadow h-11 cursor-pointer"
+          >
             {outputVal}
           </div>
         </Card>
-        <Card className="w-full md:w-[50%] flex flex-col gap-2 p-5 h-[50vh] md:h-[65vh] bg-[#fafafa]">
+        <Card className="w-full md:w-[50%] flex flex-col gap-2 p-5 h-111 bg-(--custom-card)">
           <h2 className="text-xl font-bold">
             Units of{" "}
             <span className="capitalize">{categories.filter((x) => x.id == catId)[0].name}</span>
@@ -141,7 +157,13 @@ export default function UnitConverter({ categories, units }: Props) {
               <button
                 key={u.id}
                 onClick={() => setFromId(u.id)}
-                className="text-left p-2 mr-3 rounded-md cursor-pointer flex align-middle hover:bg-accent hover:text-accent-foreground group"
+                className={`text-left p-2 mr-3 rounded-md cursor-pointer flex align-middle hover:bg-accent hover:text-accent-foreground group ${
+                  fromId === u.id || toId === u.id
+                    ? fromId === u.id
+                      ? "bg-primary/10 border-l-4 border-primary hover:border-primary"
+                      : "bg-secondary/10 border-l-4 border-secondary hover:border-primary"
+                    : ""
+                }`}
               >
                 <div>
                   <span className="text-base font-bold text-primary group-hover:text-accent-foreground capitalize text-shadow-2xs">
@@ -154,10 +176,10 @@ export default function UnitConverter({ categories, units }: Props) {
           </div>
         </Card>
       </div>
-      {/* <Card className="font-semibold flex flex-row gap-8 p-5 h-25 justify-center items-center bg-[#fafafa]">
+      {/* <Card className="font-semibold flex flex-row gap-8 p-5 h-25 justify-center items-center bg-(--custom-card)">
         <p>ADS AREA</p>
       </Card> */}
-      <Card className="flex flex-col gap-7 p-5 items-center bg-[#fafafa]">
+      <Card className="flex flex-col gap-7 p-5 items-center bg-(--custom-card)">
         <div>
           <h2 className="font-semibold text-xl mb-4 text-primary-foreground bg-primary capitalize w-fit pl-2 pr-3 shadow">
             {unitsInCategory.filter((u) => u.id == fromId)[0]?.name}

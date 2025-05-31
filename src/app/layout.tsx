@@ -1,5 +1,6 @@
 import "@/app/globals.css";
 import type { Metadata } from "next";
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: {
@@ -100,6 +101,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className="scroll-smooth">
       <body className="bg-striped text-foreground">
         <div className="md:min-h-screen antialiased flex md:pt-3">{children}</div>
+        <Toaster
+          position="top-center"
+          toastOptions={{
+            duration: 1000,
+            style: {
+              backgroundColor: "var(--custom-card",
+              boxShadow: "var(--shadow)",
+              borderRadius: "calc(var(--radius) + 4px)",
+              borderStyle: "var(--tw-border-style)",
+              borderWidth: "1px",
+              borderColor: "var(--border)",
+            },
+          }}
+          expand={false}
+          richColors
+        />
       </body>
     </html>
   );

@@ -44,11 +44,15 @@
 }
 
 :root {
+  --custom-card: #fafafa;
+}
+
+:root {
   --background: #ffffff;
   --foreground: #000000;
   --card: #ffffff;
   --card-foreground: #000000;
-  --popover: #ffffff;
+  --popover: #fafafa;
   --popover-foreground: #000000;
   --primary: #d65c5c;
   --primary-foreground: #ffffff;
@@ -233,3 +237,18 @@
   );
 }
 
+[data-sonner-toast][data-styled=true] {
+    color: var(--foreground) !important;
+    font-family: FiraCode !important;
+}
+
+[data-sonner-toast][data-styled=true] [data-title] {
+    font-weight: 700 !important;
+    font-size: var(--text-base) !important;
+    color: var(--primary) !important;
+}
+
+[data-rich-colors=true][data-sonner-toast][data-styled=true] [data-description] {
+    font-weight: 500 !important;
+    font-size: var(--text-sm) !important;
+}

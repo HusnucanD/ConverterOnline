@@ -3,6 +3,7 @@ import path from "node:path";
 import UnitConverter from "@/app/components/UnitConverter";
 import type { UnitsPayload } from "@/app/model/types";
 
+export const dynamic = "force-static";
 export const revalidate = false;
 
 export default async function Page() {
