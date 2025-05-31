@@ -76,6 +76,10 @@ export default function UnitConverter({ categories, units }: Props) {
         quality={100}
         className="w-23 md:w-35 mx-auto shadow-sm rounded-xl border p-1 bg-(--custom-card)"
       ></Image>
+      <h1 className="text-2xl md:text-3xl mx-auto text-primary text-center font-semibold text-shadow-xs my-1">
+        Convert any unit <br />
+        Fast, Free & Accurate
+      </h1>
       <div className="flex flex-col md:flex-row gap-6">
         <Card className="w-full md:w-[50%] flex flex-col gap-2 p-5 h-111 bg-(--custom-card)">
           <Label className="text-base font-semibold">Category</Label>
