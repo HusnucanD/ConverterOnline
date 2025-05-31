@@ -77,8 +77,8 @@
   --sidebar-border: #000000;
   --sidebar-ring: #d65c5c;
   --font-sans: FiraCode, sans-serif;
-  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  --font-mono: Space Mono, monospace;
+  --font-serif: FiraCode, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: FiraCode, monospace;
   --radius: 0px;
   --shadow-2xs: 4px 4px 0px 0px hsl(0 0% 10.1961% / 0.50);
   --shadow-xs: 4px 4px 0px 0px hsl(0 0% 10.1961% / 0.50);
@@ -124,8 +124,8 @@
   --sidebar-border: #ffffff;
   --sidebar-ring: #e08585;
   --font-sans: FiraCode, sans-serif;
-  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  --font-mono: Space Mono, monospace;
+  --font-serif: FiraCode, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: FiraCode, monospace;
   --radius: 0px;
   --shadow-2xs: 4px 4px 0px 0px hsl(0 0% 10.1961% / 0.50);
   --shadow-xs: 4px 4px 0px 0px hsl(0 0% 10.1961% / 0.50);
