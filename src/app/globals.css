@@ -233,7 +233,7 @@
   background: repeating-linear-gradient(
     135deg,
     rgba(204, 204, 51, 0.04) 0 20px,
-    #ffffff 20px 40px
+    rgba(214, 92, 92, 0.04) 20px 40px
   );
 }
 
