@@ -99,7 +99,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className="bg-striped text-foreground">
+      <body className="bg-striped text-foreground selection:bg-primary selection:text-primary-foreground">
         <div className="md:min-h-screen antialiased flex md:pt-3">{children}</div>
         <Toaster
           position="top-center"
