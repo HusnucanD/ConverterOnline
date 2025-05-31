@@ -4,42 +4,42 @@
 @custom-variant dark (&:is(.dark *));
 
 @font-face {
-  font-family: Outfit;
+  font-family: FiraCode;
+  font-style: normal;
+  font-weight: 300;
+  src: url("/font/FiraCode-Light.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: FiraCode;
   font-style: normal;
   font-weight: 400;
-  src: url("/font/Outfit-Regular.ttf") format("truetype");
+  src: url("/font/FiraCode-Regular.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
-  font-family: Outfit;
+  font-family: FiraCode;
   font-style: normal;
   font-weight: 500;
-  src: url("/font/Outfit-Medium.ttf") format("truetype");
+  src: url("/font/FiraCode-Medium.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
-  font-family: Outfit;
+  font-family: FiraCode;
   font-style: normal;
   font-weight: 600;
-  src: url("/font/Outfit-SemiBold.ttf") format("truetype");
+  src: url("/font/FiraCode-SemiBold.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
-  font-family: Outfit;
+  font-family: FiraCode;
   font-style: normal;
   font-weight: 700;
-  src: url("/font/Outfit-Bold.ttf") format("truetype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: Outfit;
-  font-style: normal;
-  font-weight: 800;
-  src: url("/font/Outfit-ExtraBold.ttf") format("truetype");
+  src: url("/font/FiraCode-Bold.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -76,7 +76,7 @@
   --sidebar-accent-foreground: #ffffff;
   --sidebar-border: #000000;
   --sidebar-ring: #d65c5c;
-  --font-sans: Outfit, sans-serif;
+  --font-sans: FiraCode, sans-serif;
   --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   --font-mono: Space Mono, monospace;
   --radius: 0px;
@@ -123,7 +123,7 @@
   --sidebar-accent-foreground: #000000;
   --sidebar-border: #ffffff;
   --sidebar-ring: #e08585;
-  --font-sans: Outfit, sans-serif;
+  --font-sans: FiraCode, sans-serif;
   --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   --font-mono: Space Mono, monospace;
   --radius: 0px;

@@ -63,9 +63,9 @@ export default function UnitConverter({ categories, units }: Props) {
         quality={100}
         className="w-23 md:w-35 mx-auto shadow-sm rounded-xl border p-1 bg-[#fafafa]"
       ></Image>
-      <div className="flex flex-col md:flex-row gap-5">
+      <div className="flex flex-col md:flex-row gap-6">
         <Card className="w-full md:w-[50%] flex flex-col gap-2 p-5 h-auto md:h-[65vh] bg-[#fafafa]">
-          <Label className="text-base">Category</Label>
+          <Label className="text-base font-semibold">Category</Label>
           <Select value={catId} onValueChange={(e: any) => setCatId(e)}>
             <SelectTrigger className="w-full cursor-pointer mb-2">
               <SelectValue />
@@ -76,12 +76,12 @@ export default function UnitConverter({ categories, units }: Props) {
                   <span className="text-xl group-hover:bg-white/50 group-focus:bg-white/50 rounded-xl px-1">
                     {c.logo}
                   </span>
-                  <span className="font-medium capitalize">{c.name}</span>
+                  <span className="font-semibold capitalize">{c.name}</span>
                 </SelectItem>
               ))}
             </SelectContent>
           </Select>
-          <Label className="text-base">From</Label>
+          <Label className="text-base font-semibold">From</Label>
           <Select value={fromId} onValueChange={(e: any) => setFromId(e)}>
             <SelectTrigger className="w-full cursor-pointer mb-2">
               <SelectValue />
@@ -89,15 +89,15 @@ export default function UnitConverter({ categories, units }: Props) {
             <SelectContent className="max-h-[40vh]">
               {unitsInCategory.map((u) => (
                 <SelectItem key={u.id} value={u.id} className="cursor-pointer group">
-                  <span className="font-semibold capitalize text-primary group-hover:text-primary-foreground group-focus:text-primary-foreground">
+                  <span className="font-bold capitalize text-primary group-hover:text-primary-foreground group-focus:text-primary-foreground">
                     {u.shortName}
                   </span>
-                  <span className="font-medium capitalize">{u.name}</span>
+                  <span className="font-semibold capitalize">{u.name}</span>
                 </SelectItem>
               ))}
             </SelectContent>
           </Select>
-          <Label className="text-base">To</Label>
+          <Label className="text-base font-semibold">To</Label>
           <Select value={toId} onValueChange={(e: any) => setToId(e)}>
             <SelectTrigger className="w-full cursor-pointer mb-2">
               <SelectValue />
@@ -109,27 +109,27 @@ export default function UnitConverter({ categories, units }: Props) {
                   value={u.id}
                   className="cursor-pointer hover:bg-accent group"
                 >
-                  <span className="font-semibold capitalize text-primary group-hover:text-primary-foreground group-focus:text-primary-foreground">
+                  <span className="font-bold capitalize text-primary group-hover:text-primary-foreground group-focus:text-primary-foreground">
                     {u.shortName}
                   </span>
-                  <span className="font-medium capitalize">{u.name}</span>
+                  <span className="font-semibold capitalize">{u.name}</span>
                 </SelectItem>
               ))}
             </SelectContent>
           </Select>
-          <Label className="text-base">Value</Label>
+          <Label className="text-base font-semibold">Value</Label>
           <Input
             type="number"
             value={inputVal}
-            className="font-medium"
+            className="font-semibold"
             onChange={(e) => setInputVal(e.target.value)}
           ></Input>
-          <div className="flex items-center justify-center text-xl font-bold font-mono rounded-md bg-primary text-primary-foreground mt-3 py-2 cursor shadow h-11">
+          <div className="flex items-center justify-center text-xl font-bold font-mono rounded-md bg-primary text-primary-foreground mt-6 py-2 cursor shadow h-11">
             {outputVal}
           </div>
         </Card>
         <Card className="w-full md:w-[50%] flex flex-col gap-2 p-5 h-[50vh] md:h-[65vh] bg-[#fafafa]">
-          <h2 className="text-xl font-medium">
+          <h2 className="text-xl font-bold">
             Units of{" "}
             <span className="capitalize">{categories.filter((x) => x.id == catId)[0].name}</span>
             <span className="ml-1 text-2xl rounded-md">
@@ -144,10 +144,10 @@ export default function UnitConverter({ categories, units }: Props) {
                 className="text-left p-2 mr-3 rounded-md cursor-pointer flex align-middle hover:bg-accent hover:text-accent-foreground group"
               >
                 <div>
-                  <span className="text-base font-semibold text-primary group-hover:text-accent-foreground capitalize text-shadow-sm">
+                  <span className="text-base font-bold text-primary group-hover:text-accent-foreground capitalize text-shadow-2xs">
                     {u.shortName}
                   </span>
-                  <span className="text-sm font-medium capitalize ml-1">{u.name}</span>
+                  <span className="text-sm font-semibold capitalize ml-1">{u.name}</span>
                 </div>
               </button>
             ))}
@@ -157,22 +157,23 @@ export default function UnitConverter({ categories, units }: Props) {
       {/* <Card className="font-semibold flex flex-row gap-8 p-5 h-25 justify-center items-center bg-[#fafafa]">
         <p>ADS AREA</p>
       </Card> */}
-      <Card className="flex flex-col gap-6 p-5 bg-[#fafafa]">
+      <Card className="flex flex-col gap-7 p-5 items-center bg-[#fafafa]">
         <div>
-          <h2 className="font-medium text-xl mb-1 text-primary-foreground bg-primary capitalize w-fit pl-2 pr-3">
+          <h2 className="font-semibold text-xl mb-4 text-primary-foreground bg-primary capitalize w-fit pl-2 pr-3 shadow">
             {unitsInCategory.filter((u) => u.id == fromId)[0]?.name}
           </h2>
-          <p className="text-base">
+          <p className="text-base font-medium">
             {unitsInCategory.filter((u) => u.id == fromId)[0]?.description}
           </p>
         </div>
         <div>
-          <h2 className="font-medium text-xl mb-1 text-primary-foreground bg-primary capitalize w-fit pl-2 pr-3">
+          <h2 className="font-semibold text-xl mb-4 text-primary-foreground bg-primary capitalize w-fit pl-2 pr-3 shadow">
             {unitsInCategory.filter((u) => u.id == toId)[0]?.name}
           </h2>
-          <p className="text-base">{unitsInCategory.filter((u) => u.id == toId)[0]?.description}</p>
+          <p className="text-base font-medium">
+            {unitsInCategory.filter((u) => u.id == toId)[0]?.description}
+          </p>
         </div>
-        <div></div>
       </Card>
     </div>
   );
