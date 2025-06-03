@@ -31,7 +31,7 @@ const redirectToInitialConversion = async () => {
   );
 };
 
-export default async function Page({ params }: ConversionPageProps) {
+export default async function Page({ params }: any) {
   if (params.conversion && params.conversion[0]) {
     const conversionPath = params.conversion[0];
     const match = conversionPath.match(/^(.+)-2-(.+)$/);
