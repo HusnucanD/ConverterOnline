@@ -4,35 +4,40 @@ import { toast } from "sonner";
 import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Label } from "@/components/ui/label";
 import type { Category, Unit } from "@/app/model/types";
+import { usePathname, useRouter } from "next/navigation";
 
 interface Props {
   categories: Category[];
   units: Unit[];
+  fromId: string;
+  toId: string;
 }
 
-export default function UnitConverter({ categories, units }: Props) {
-  const [catId, setCatId] = useState<string>(categories[0]?.id ?? "");
-  const unitsInCategory = useMemo(
-    () => units.filter((u) => u.categoryId === catId),
-    [units, catId]
-  );
-  const [fromId, setFromId] = useState<string>("");
-  const [toId, setToId] = useState<string>("");
+const slugify = (text: string): string => {
+  return text
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-")
+    .trim();
+};
+
+export default function UnitConverter({ categories, units, fromId, toId }: Props) {
+  const router = useRouter();
+  const pathname = usePathname();
+  const [catId, setCatId] = useState<string>();
+  const unitsInCategory = useMemo(() => units.filter((u) => u.categoryId === catId), [units, catId]);
   const [inputVal, setInputVal] = useState<string>("1");
   const [outputVal, setOutputVal] = useState<string>("");
   useEffect(() => {
-    setFromId(unitsInCategory[0]?.id ?? "");
-    setToId(unitsInCategory[1]?.id ?? unitsInCategory[0]?.id ?? "");
-  }, [unitsInCategory]);
+    const fromUnit = units.find((u) => u.id === fromId);
+    if (fromUnit) {
+      setCatId(fromUnit.categoryId);
+    }
+  }, [fromId]);
   useEffect(() => {
     if (!fromId || !toId) return;
     if (fromId === toId) {
@@ -54,6 +59,17 @@ export default function UnitConverter({ categories, units }: Props) {
       setOutputVal("Error");
     }
   }, [inputVal, fromId, toId, units]);
+  const handleCategoryChange = (catId: string) => {
+    const unitsInCategory = units.filter((u) => u.categoryId == catId);
+    const fromUnit = unitsInCategory[Math.floor(unitsInCategory.length / 2) - 1];
+    const toUnit = unitsInCategory[Math.floor(unitsInCategory.length / 2)];
+    if (fromUnit && toUnit) {
+      const newPath = `/${slugify(fromUnit.name)}-2-${slugify(toUnit.name)}`;
+      if (pathname !== newPath) {
+        router.push(newPath, { scroll: false });
+      }
+    }
+  };
   const copyToClipboard = () => {
     navigator.clipboard
       .writeText(outputVal)
@@ -65,6 +81,22 @@ export default function UnitConverter({ categories, units }: Props) {
       .catch(() => {
         toast.error("Failed to Copy");
       });
+  };
+  const changePath = (field: any, value: any) => {
+    let fromUnit, toUnit;
+    if (field == "from") {
+      fromUnit = units.find((u) => u.id === value);
+      toUnit = units.find((u) => u.id === toId);
+    } else {
+      fromUnit = units.find((u) => u.id === fromId);
+      toUnit = units.find((u) => u.id === value);
+    }
+    if (fromUnit && toUnit) {
+      const newPath = `/${slugify(fromUnit.name)}-2-${slugify(toUnit.name)}`;
+      if (pathname !== newPath) {
+        router.push(newPath, { scroll: false });
+      }
+    }
   };
   return (
     <div className="mx-auto max-w-5xl h-auto md:min-h-full flex flex-col gap-5 pb-10">
@@ -93,7 +125,7 @@ export default function UnitConverter({ categories, units }: Props) {
       <div className="flex flex-col md:flex-row gap-6">
         <Card className="w-full md:w-[50%] flex flex-col gap-2 p-5 h-111 bg-(--custom-card)">
           <Label className="text-base font-semibold">Category</Label>
-          <Select value={catId} onValueChange={(e: any) => setCatId(e)}>
+          <Select value={catId} onValueChange={(e: any) => handleCategoryChange(e)}>
             <SelectTrigger className="w-full cursor-pointer mb-2">
               <SelectValue />
             </SelectTrigger>
@@ -109,7 +141,7 @@ export default function UnitConverter({ categories, units }: Props) {
             </SelectContent>
           </Select>
           <Label className="text-base font-semibold">From</Label>
-          <Select value={fromId} onValueChange={(e: any) => setFromId(e)}>
+          <Select value={fromId} onValueChange={(e: any) => changePath("from", e)}>
             <SelectTrigger className="w-full cursor-pointer mb-2">
               <SelectValue />
             </SelectTrigger>
@@ -125,17 +157,13 @@ export default function UnitConverter({ categories, units }: Props) {
             </SelectContent>
           </Select>
           <Label className="text-base font-semibold">To</Label>
-          <Select value={toId} onValueChange={(e: any) => setToId(e)}>
+          <Select value={toId} onValueChange={(e: any) => changePath("to", e)}>
             <SelectTrigger className="w-full cursor-pointer mb-2">
               <SelectValue />
             </SelectTrigger>
             <SelectContent className="max-h-[40vh]">
               {unitsInCategory.map((u) => (
-                <SelectItem
-                  key={u.id}
-                  value={u.id}
-                  className="cursor-pointer hover:bg-accent group"
-                >
+                <SelectItem key={u.id} value={u.id} className="cursor-pointer hover:bg-accent group">
                   <span className="font-bold capitalize text-primary group-hover:text-primary-foreground group-focus:text-primary-foreground">
                     {u.shortName}
                   </span>
@@ -160,17 +188,16 @@ export default function UnitConverter({ categories, units }: Props) {
         </Card>
         <Card className="w-full md:w-[50%] flex flex-col gap-2 p-5 h-111 bg-(--custom-card)">
           <h2 className="text-xl font-bold">
-            Units of{" "}
-            <span className="capitalize">{categories.filter((x) => x.id == catId)[0].name}</span>
+            Units of <span className="capitalize">{categories.filter((x) => x.id == catId)[0]?.name}</span>
             <span className="ml-1 text-2xl rounded-md">
-              {categories.filter((x) => x.id == catId)[0].logo}
+              {categories.filter((x) => x.id == catId)[0]?.logo}
             </span>
           </h2>
           <div className="flex flex-col grow overflow-y-auto">
             {unitsInCategory.map((u) => (
               <button
                 key={u.id}
-                onClick={() => setFromId(u.id)}
+                onClick={() => console.log(u.id)}
                 className={`text-left p-2 mr-3 rounded-md cursor-pointer flex align-middle hover:bg-accent hover:text-accent-foreground group ${
                   fromId === u.id || toId === u.id
                     ? fromId === u.id
