@@ -9,7 +9,7 @@ import { Label } from "@/components/ui/label";
 import type { Category, Unit } from "@/app/model/types";
 import { usePathname, useRouter } from "next/navigation";
 
-interface Props {
+interface UnitConverterProps {
   categories: Category[];
   units: Unit[];
   fromId: string;
@@ -25,7 +25,7 @@ const slugify = (text: string): string => {
     .trim();
 };
 
-export default function UnitConverter({ categories, units, fromId, toId }: Props) {
+export default function UnitConverter({ categories, units, fromId, toId }: UnitConverterProps) {
   const router = useRouter();
   const pathname = usePathname();
   const [catId, setCatId] = useState<string>();

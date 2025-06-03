@@ -6,7 +6,7 @@ import type { UnitsPayload } from "@/app/model/types";
 
 export const revalidate = false;
 
-interface PageProps {
+interface ConversionPageProps {
   params: {
     conversion?: string[];
   };
@@ -31,7 +31,7 @@ const redirectToInitialConversion = async () => {
   );
 };
 
-export default async function Page({ params }: PageProps) {
+export default async function Page({ params }: ConversionPageProps) {
   if (params.conversion && params.conversion[0]) {
     const conversionPath = params.conversion[0];
     const match = conversionPath.match(/^(.+)-2-(.+)$/);
