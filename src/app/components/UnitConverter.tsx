@@ -221,7 +221,7 @@ export default function UnitConverter({ categories, units, fromId, toId }: Props
         <p>ADS AREA</p>
       </Card> */}
       <Card className="flex flex-col gap-7 p-5 items-center bg-(--custom-card)">
-        <div>
+        <div className="w-full">
           <h2 className="font-semibold text-xl mb-4 text-primary-foreground bg-primary capitalize w-fit pl-2 pr-3 shadow">
             {unitsInCategory.filter((u) => u.id == fromId)[0]?.name}
           </h2>
@@ -229,7 +229,7 @@ export default function UnitConverter({ categories, units, fromId, toId }: Props
             {unitsInCategory.filter((u) => u.id == fromId)[0]?.description}
           </p>
         </div>
-        <div>
+        <div className="w-full">
           <h2 className="font-semibold text-xl mb-4 text-primary-foreground bg-primary capitalize w-fit pl-2 pr-3 shadow">
             {unitsInCategory.filter((u) => u.id == toId)[0]?.name}
           </h2>
