@@ -37,7 +37,7 @@ export default function UnitConverter({ categories, units, fromId, toId }: UnitC
     if (fromUnit) {
       setCatId(fromUnit.categoryId);
     }
-  }, [fromId]);
+  }, [fromId, units]);
   useEffect(() => {
     if (!fromId || !toId) return;
     if (fromId === toId) {

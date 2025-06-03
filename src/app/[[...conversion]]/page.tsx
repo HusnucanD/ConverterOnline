@@ -6,12 +6,6 @@ import type { UnitsPayload } from "@/app/model/types";
 
 export const revalidate = false;
 
-interface ConversionPageProps {
-  params: {
-    conversion?: string[];
-  };
-}
-
 const slugify = (text: string): string => {
   return text
     .toLowerCase()
