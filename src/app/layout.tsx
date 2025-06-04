@@ -4,7 +4,7 @@ import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: {
-    default: "Converter.online – Free Unit Converter",
+    default: "Converter Online – Free Unit Converter",
     template: "%s | Converter.online",
   },
   description:
@@ -54,8 +54,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://converter.online",
-    siteName: "Converter.online",
-    title: "Converter.online – Convert 500+ Units Instantly",
+    siteName: "Converter Online",
+    title: "Converter Online – Convert 500+ Units Instantly",
     description:
       "Convert over 500 units of length, mass, volume, pressure and more — fast, reliable & ad-free.",
     locale: "en_US",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
         url: "https://converter.online/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Converter.online – Free Unit Converter",
+        alt: "Converter Online – Free Unit Converter",
       },
     ],
   },
