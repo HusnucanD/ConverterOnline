@@ -35,7 +35,7 @@ export default async function Page({ params }: any) {
       const [, fromSlug, toSlug] = match;
       const fromId = data.units.find((u) => slugify(u.name) === fromSlug)?.id || "";
       const toId = data.units.find((u) => slugify(u.name) === toSlug)?.id || "";
-      if (fromId != "" || toId != "") {
+      if (fromId != "" && toId != "") {
         return (
           <main className="w-full px-4 md:px-8 py-6 md:py-3">
             <UnitConverter categories={data.categories} units={data.units} fromId={fromId} toId={toId} />
