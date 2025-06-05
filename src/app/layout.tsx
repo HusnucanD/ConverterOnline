@@ -90,7 +90,7 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: "/favicon.ico",
-    shortcut: "/logo.svg",
+    shortcut: "/favicon.ico",
     apple: "/favicon.ico",
   },
   manifest: "/site.webmanifest",
