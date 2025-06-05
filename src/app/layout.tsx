@@ -72,9 +72,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@converteronline",
     creator: "@converteronline",
-    title: "Converter.online – Free Unit Converter",
+    title: "Converter Online – Free Unit Converter",
     description: "Convert over 500 units in one click. Accurate, ad-free & mobile-friendly.",
-    images: ["https://converter.online/og-image.png"],
+    images: ["https://converter.online/logo.svg"],
   },
   robots: {
     index: true,
