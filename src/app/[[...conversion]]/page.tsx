@@ -1,7 +1,9 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { redirect, RedirectType } from "next/navigation";
-import UnitConverter from "@/app/components/UnitConverter";
+import UnitsHeader from "@/app/components/UnitsHeader";
+import UnitsConverter from "@/app/components/UnitsConverter";
+import UnitsInfo from "@/app/components/UnitsInfo";
 import type { UnitsPayload } from "@/app/model/types";
 
 export const revalidate = false;
@@ -38,7 +40,11 @@ export default async function Page({ params }: any) {
       if (fromId != "" && toId != "") {
         return (
           <main className="w-full px-4 md:px-8 py-6 md:py-3">
-            <UnitConverter categories={data.categories} units={data.units} fromId={fromId} toId={toId} />
+            <div className="mx-auto max-w-5xl h-auto md:min-h-full flex flex-col gap-5 pb-10">
+              <UnitsHeader />
+              <UnitsConverter categories={data.categories} units={data.units} fromId={fromId} toId={toId} />
+              <UnitsInfo units={data.units} fromId={fromId} toId={toId} />
+            </div>
           </main>
         );
       } else {

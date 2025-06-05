@@ -9,7 +9,7 @@ export interface Unit {
   name: string;
   shortName: string;
   categoryId: string;
-  conversions: Record<string, string>; // arrow fn strings
+  conversions: Record<string, string>;
   description: string;
 }
 

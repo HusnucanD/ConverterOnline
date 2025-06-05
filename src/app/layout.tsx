@@ -1,6 +1,6 @@
-import "@/app/globals.css";
 import type { Metadata } from "next";
 import { Toaster } from "sonner";
+import "@/app/globals.css";
 
 export const metadata: Metadata = {
   title: {
@@ -61,9 +61,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://converter.online/og-image.png",
+        url: "https://converter.online/logo.svg",
         width: 1200,
-        height: 630,
+        height: 1200,
         alt: "Converter Online – Free Unit Converter",
       },
     ],
@@ -90,8 +90,8 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
+    shortcut: "/logo.svg",
+    apple: "/logo.svg",
   },
   manifest: "/site.webmanifest",
 };
