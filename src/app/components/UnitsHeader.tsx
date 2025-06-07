@@ -6,7 +6,7 @@ export default function UnitsHeader() {
   return (
     <>
       <Image
-        src="/logo.svg"
+        src="/logo2.svg"
         alt="Converter Online"
         width={130}
         height={130}

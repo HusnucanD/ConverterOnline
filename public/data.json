@@ -436,7 +436,7 @@
         "u478": "(v)=>v*6.68458712226845e-09",
         "u479": "(v)=>v*1.057004238587e-13"
       },
-      "description": "A kilometer (km) is an SI unit of length applying the kilo‑ prefix (10^3). One kilometer equals 1000 meters. The kilo prefix denotes a factor of 10^3, so 1 kilometer equals 10^3 metres. Such scaled magnitudes are primarily encountered in everyday engineering and surveying."
+      "description": "**Kilometre (kilometer) – symbol km**  \nA kilometre is exactly **1 000 metres**, making it the most convenient unit for expressing everyday medium‑scale distances. Road networks, running races, hiking maps, and aviation flight levels all rely heavily on the kilometre because the round base‑10 factor meshes cleanly with SI prefixes.\n\n**Historical context & standardization**  \nAdopted during the French metric reform in the late 18th century, the kilometre quickly replaced traditional leagues and furlongs across continental Europe. Today it is the official road‑sign distance unit in every country except the United States, United Kingdom, and a handful of others.\n\n**Key equivalences & SEO‑friendly facts**  \n• 1 km = 0.621 371 192 24 statute miles  \n• 5 km = popular “parkrun” distance  \n• 42.195 km = full marathon length  \n• 10 000 km ≈ quarter of Earth’s circumference  \nBecause it bridges the gap between metres and larger geodesic units, the kilometre dominates GPS navigation, fitness trackers, automotive odometers, and scientific reporting of planetary diameters."
     },
     {
       "id": "u9",
@@ -547,7 +547,7 @@
         "u478": "(v)=>v*6.68458712226845e-12",
         "u479": "(v)=>v*1.057004238587e-16"
       },
-      "description": "The metre (m) is the SI base unit of length, defined as the distance light travels in vacuum in 1/299 792 458 of a second."
+      "description": "**Meter (metre) – symbol m**  \nThe metre is the internationally accepted base unit of length in the International System of Units (SI). Since 1983 it has been defined with exquisite precision as *the distance travelled by light in vacuum in 1/299 792 458 of a second*. Because the speed of light is a universal constant, this ties the metre to the fundamental fabric of physics and allows laboratories anywhere on Earth (or in space) to realise the unit with lasers and an accurate atomic clock.\n\nHistorically the metre has evolved from a fraction of Earth’s meridian (1790s), through platinum‑iridium prototype bars (1889), to interferometer wavelengths of krypton‑86 (1960), culminating in the current light‑based definition. Whatever spelling you choose—*meter* (US) or *metre* (UK/Commonwealth)—the value is identical.\n\n**Quick conversions & use‑cases**  \n• 1 m ≈ 39.370 inches (3 ft 3 3⁄8 in)  \n• 100 m ≈ the length of a soccer pitch  \n• 1 000 m = 1 kilometre  \nFrom civil engineering and athletics (“100‑metre dash”) to nanoscale chip fabrication (1 nm = 1 × 10‑9 m), the metre underpins every modern length measurement."
     },
     {
       "id": "u12",
@@ -1197,7 +1197,7 @@
         "u496": "(v)=>v*0.984206527611061",
         "u497": "(v)=>v*5000000"
       },
-      "description": "A kilogram (kg) is an SI unit of mass applying the kilo‑ prefix (10^3). One kilogram equals 1000 grams. The kilo prefix denotes a factor of 10^3, so 1 kilogram equals 10^3 grams. Such scaled magnitudes are primarily encountered in routine laboratory and commercial practice."
+      "description": "**Kilogram – symbol kg**  \nThe kilogram is the SI base unit of mass and the only one demoted from a physical artefact to a pure constant of nature. Since 20 May 2019 (World Metrology Day) the kilogram has been defined by fixing the numerical value of Planck’s constant *h* to exactly 6.626 070 15 × 10‑34 J·s. In practice a sophisticated electromechanical **Kibble balance** equates mechanical power to electrical power traceable to quantum Hall and Josephson effects, realising the kilogram anywhere electricity and an atomic clock are available.\n\n**Evolution in a nutshell**  \n• 1795: defined as the mass of 1 dm³ of water at the melting point of ice  \n• 1889–2019: international prototype kilogram (IPK) – a platinum‑iridium cylinder kept near Paris  \n• 2019–present: constant‑of‑nature definition removing dependency on any material object\n\n**Everyday anchors & conversions**  \n• 1 kg ≈ 2.204 622 621 85 pounds (lb)  \n• 500 g = 0.5 kg (standard butter block)  \n• 1 000 kg = 1 tonne (t, metric ton)  \nThe kilogram powers commerce (grocery scales), health (body‑mass index), engineering (load calculations), and international trade documentation."
     },
     {
       "id": "u30",
@@ -15015,7 +15015,7 @@
         "u478": "(v)=>v*1.07578001777e-08",
         "u479": "(v)=>v*1.70108342934455e-13"
       },
-      "description": "An international mile (mi) is an Imperial/US unit of length equal to 1 609.344 m (5 280 ft). The statute mile is defined as exactly 1 609.344 metres (about 5280 feet). It originated from the Roman mille passuum and remains the standard for road distances in the United States and the United Kingdom."
+      "description": "**Mile (statute mile) – symbol mi**  \nA mile is an imperial / US customary unit of length **exactly equal to 1 609.344 metres** or 5 280 feet. The statute mile was standardised in England in 1592, unifying a patchwork of Roman, Saxon, and medieval measurements based on the pace (*mille passus* = 1 000 paces).\n\n**Variations you may meet**  \n• **Nautical mile** (nmi) = 1 852 m, tied to 1 minute of latitude  \n• **Survey mile** (US) ≈ 1 609.347 m (very minor difference)  \n• **Scots / Irish miles** – historical, now obsolete\n\n**Practical context & useful numbers**  \n• 1 mile ≈ 1.609 km (easy rule: 5 miles ≈ 8 km)  \n• Marathon = 26 mi 385 yd (42.195 km)  \n• Speed limits in the USA: 55 mph ≈ 88.5 km/h  \nThe mile remains entrenched in American and British road signage, aviation distance reporting (while altitude uses feet, distance often nautical miles), competitive running culture (“four‑minute mile” milestone), and colloquial speech (“go the extra mile”)."
     },
     {
       "id": "u476",
@@ -15775,7 +15775,7 @@
         "u503": "(v)=>v*9.92063492063492e-05",
         "u504": "(v)=>v*1.90128526884174e-06"
       },
-      "description": "A minute (min) is a unit of time equal to 60 seconds."
+      "description": "**Minute – symbol min**  \nA minute is a unit of time **equal to 60 seconds**. This sexagesimal (base‑60) subdivision dates back over 4 000 years to the Sumerians and Babylonians, whose astronomical tables used 60 because it is highly divisible (2, 3, 4, 5, 6). Because the modern second is defined via 9 192 631 770 periods of the caesium‑133 hyperfine transition, the minute inherits atomic‑clock precision.\n\n**Dual identity: time vs angle**  \nWhile most people encounter minutes on clocks, phone timers, and meeting agendas, the same ratio appears in angular measure: 1 ° = 60 arcminutes (60′), indispensable for celestial navigation and telescope pointing.\n\n**Conversions & ubiquity**  \n• 1 min = 60 s = 0.016 666 7 h  \n• 30 min = common TV‑show slot  \n• 1 000 rpm (revolutions per minute) benchmarks engine speed  \nIn digital media analytics (“minutes‑watched”), fitness trackers, cookbooks, and musical tempo encoding (beats per minute), the minute bridges human intuition and high‑precision timing systems."
     },
     {
       "id": "u501",
@@ -15847,7 +15847,7 @@
         "u503": "(v)=>v*0.142857142857143",
         "u504": "(v)=>v*0.0027378507871321"
       },
-      "description": "A day (day) is a unit of time equal to 86400 seconds."
+      "description": "**Day – symbol d**  \nA day is the interval of **86 400 SI seconds**, closely matching one mean solar rotation of Earth. Because our planet’s spin is gradually slowing and irregular, the International Earth Rotation and Reference Systems Service (IERS) occasionally inserts **leap seconds** to keep civil time (Coordinated Universal Time, UTC) within 0.9 s of UT1 (astronomically observed rotation).\n\n**Flavours of the day**  \n• **Sidereal day**: 23 h 56 m 4.091 s – relative to distant stars  \n• **Solar day**: average noon‑to‑noon, basis of civil day  \n• **Julian day number (JDN)**: continuous count used by astronomers  \n• **Business day**: Monday–Friday, excluding holidays  \n\n**Relations & cultural weight**  \n• 7 days = 1 week | 365 days ≈ common year  \n• 1 day ≈ 1 rotation, tying clocks to geography and sunlight  \nFrom diurnal animal behaviour studies to global logistics, data‑centre backup cycles, and circadian‑rhythm medicine, the day is the heartbeat of calendars and biological life."
     },
     {
       "id": "u503",
@@ -15883,7 +15883,7 @@
         "u502": "(v)=>v*7",
         "u504": "(v)=>v*0.0191649555099247"
       },
-      "description": "A week (wk) is a unit of time equal to 604800 seconds."
+      "description": "**Week – symbol wk**  \nA week is a calendar interval of **seven consecutive days**, traditionally named Monday through Sunday in ISO 8601 (or Sunday to Saturday in US convention). Unlike months and years, the week has no direct astronomical anchor; its persistence stems from ancient cultures that linked the seven visible “classical” planets (Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn) to each day.\n\n**Historical timeline**  \n• 6th c. BCE: Babylonian 7‑day cycle spreads via Judaism  \n• 321 CE: Roman Emperor Constantine I makes Sunday a weekly rest day  \n• 1582: Gregorian calendar reform retains the unbroken week sequence\n\n**Structuring the modern world**  \nPayroll periods, school timetables, agile software “sprints”, ISO “week dates” (e.g., 2025‑W23) and epidemiological reports rely on the unwavering cadence of the week.\n\n**Key figures**  \n• 1 week = 7 days = 168 hours  \n• 52 weeks + 1 day (or 2 in leap years) ≈ 1 Gregorian year  \nWith universal recognition and clear segmentation into weekdays vs weekend, the week underpins social rhythms, economic statistics, and time‑series dashboards."
     },
     {
       "id": "u504",
