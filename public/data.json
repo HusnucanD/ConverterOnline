@@ -7525,8 +7525,7 @@
         "u257": "(v)=>v*909494701772.928",
         "u258": "(v)=>v*931322574615478",
         "u259": "(v)=>v*9.5367431640625e+17",
-        "u260": "(v)=>v*9.765625e+20",
-        "u261": "(v)=>v*1e+24"
+        "u260": "(v)=>v*9.765625e+20"
       },
       "description": "A yottabyte (YB) is an SI unit of data applying the yotta‑ prefix (10^24). One yottabyte equals 1e+24 bytes. The yotta prefix denotes a factor of 10^24, so 1 yottabyte equals 10^24 bytes. Such immensely large magnitudes are primarily encountered in petascale and exascale data‑centre planning."
     },
@@ -7563,8 +7562,7 @@
         "u257": "(v)=>v*909494701.772928",
         "u258": "(v)=>v*931322574615.479",
         "u259": "(v)=>v*953674316406250",
-        "u260": "(v)=>v*9.765625e+17",
-        "u261": "(v)=>v*1e+21"
+        "u260": "(v)=>v*9.765625e+17"
       },
       "description": "A zettabyte (ZB) is an SI unit of data applying the zetta‑ prefix (10^21). One zettabyte equals 1e+21 bytes. The zetta prefix denotes a factor of 10^21, so 1 zettabyte equals 10^21 bytes. Such immensely large magnitudes are primarily encountered in petascale and exascale data‑centre planning."
     },
@@ -7601,8 +7599,7 @@
         "u257": "(v)=>v*909494.701772928",
         "u258": "(v)=>v*931322574.615479",
         "u259": "(v)=>v*953674316406.25",
-        "u260": "(v)=>v*976562500000000",
-        "u261": "(v)=>v*1e+18"
+        "u260": "(v)=>v*976562500000000"
       },
       "description": "A exabyte (EB) is an SI unit of data applying the exa‑ prefix (10^18). One exabyte equals 1e+18 bytes. The exa prefix denotes a factor of 10^18, so 1 exabyte equals 10^18 bytes. Such immensely large magnitudes are primarily encountered in petascale and exascale data‑centre planning."
     },
@@ -7639,8 +7636,7 @@
         "u257": "(v)=>v*909.494701772928",
         "u258": "(v)=>v*931322.574615479",
         "u259": "(v)=>v*953674316.40625",
-        "u260": "(v)=>v*976562500000",
-        "u261": "(v)=>v*1e+15"
+        "u260": "(v)=>v*976562500000"
       },
       "description": "A petabyte (PB) is an SI unit of data applying the peta‑ prefix (10^15). One petabyte equals 1e+15 bytes. The peta prefix denotes a factor of 10^15, so 1 petabyte equals 10^15 bytes. Such immensely large magnitudes are primarily encountered in petascale and exascale data‑centre planning."
     },
@@ -7677,8 +7673,7 @@
         "u257": "(v)=>v*0.909494701772928",
         "u258": "(v)=>v*931.322574615479",
         "u259": "(v)=>v*953674.31640625",
-        "u260": "(v)=>v*976562500",
-        "u261": "(v)=>v*1000000000000"
+        "u260": "(v)=>v*976562500"
       },
       "description": "A terabyte (TB) is an SI unit of data applying the tera‑ prefix (10^12). One terabyte equals 1e+12 bytes. The tera prefix denotes a factor of 10^12, so 1 terabyte equals 10^12 bytes. Such immensely large magnitudes are primarily encountered in petascale and exascale data‑centre planning."
     },
@@ -7715,8 +7710,7 @@
         "u257": "(v)=>v*0.000909494701772928",
         "u258": "(v)=>v*0.931322574615479",
         "u259": "(v)=>v*953.67431640625",
-        "u260": "(v)=>v*976562.5",
-        "u261": "(v)=>v*1000000000"
+        "u260": "(v)=>v*976562.5"
       },
       "description": "A gigabyte (GB) is an SI unit of data applying the giga‑ prefix (10^9). One gigabyte equals 1000000000 bytes. The giga prefix denotes a factor of 10^9, so 1 gigabyte equals 10^9 bytes. Such very large magnitudes are primarily encountered in high‑performance computing and enterprise storage."
     },
@@ -7753,8 +7747,7 @@
         "u257": "(v)=>v*9.09494701772928e-07",
         "u258": "(v)=>v*0.000931322574615479",
         "u259": "(v)=>v*0.95367431640625",
-        "u260": "(v)=>v*976.5625",
-        "u261": "(v)=>v*1000000"
+        "u260": "(v)=>v*976.5625"
       },
       "description": "A megabyte (MB) is an SI unit of data applying the mega‑ prefix (10^6). One megabyte equals 1000000 bytes. The mega prefix denotes a factor of 10^6, so 1 megabyte equals 10^6 bytes. Such very large magnitudes are primarily encountered in high‑performance computing and enterprise storage."
     },
@@ -7791,8 +7784,7 @@
         "u257": "(v)=>v*9.09494701772928e-10",
         "u258": "(v)=>v*9.31322574615479e-07",
         "u259": "(v)=>v*0.00095367431640625",
-        "u260": "(v)=>v*0.9765625",
-        "u261": "(v)=>v*1000"
+        "u260": "(v)=>v*0.9765625"
       },
       "description": "A kilobyte (kB) is an SI unit of data applying the kilo‑ prefix (10^3). One kilobyte equals 1000 bytes. The kilo prefix denotes a factor of 10^3, so 1 kilobyte equals 10^3 bytes. Such scaled magnitudes are primarily encountered in general information‑technology specifications."
     },
@@ -7829,8 +7821,7 @@
         "u257": "(v)=>v*9.09494701772928e-11",
         "u258": "(v)=>v*9.31322574615479e-08",
         "u259": "(v)=>v*9.5367431640625e-05",
-        "u260": "(v)=>v*0.09765625",
-        "u261": "(v)=>v*100"
+        "u260": "(v)=>v*0.09765625"
       },
       "description": "A hectobyte (hB) is an SI unit of data applying the hecto‑ prefix (10^2). One hectobyte equals 100 bytes. The hecto prefix denotes a factor of 10^2, so 1 hectobyte equals 10^2 bytes. Such scaled magnitudes are primarily encountered in general information‑technology specifications."
     },
@@ -7867,8 +7858,7 @@
         "u257": "(v)=>v*9.09494701772928e-12",
         "u258": "(v)=>v*9.31322574615479e-09",
         "u259": "(v)=>v*9.5367431640625e-06",
-        "u260": "(v)=>v*0.009765625",
-        "u261": "(v)=>v*10"
+        "u260": "(v)=>v*0.009765625"
       },
       "description": "A decabyte (daB) is an SI unit of data applying the deca‑ prefix (10^1). One decabyte equals 10 bytes. The deca prefix denotes a factor of 10^1, so 1 decabyte equals 10^1 bytes. Such scaled magnitudes are primarily encountered in general information‑technology specifications."
     },
@@ -7905,8 +7895,7 @@
         "u257": "(v)=>v*9.09494701772928e-13",
         "u258": "(v)=>v*9.31322574615479e-10",
         "u259": "(v)=>v*9.5367431640625e-07",
-        "u260": "(v)=>v*0.0009765625",
-        "u261": "(v)=>v*1"
+        "u260": "(v)=>v*0.0009765625"
       },
       "description": "A byte (B) is a unit of digital information consisting of eight bits; it is commonly the amount needed to encode a single character."
     },
@@ -7943,8 +7932,7 @@
         "u257": "(v)=>v*9.09494701772928e-14",
         "u258": "(v)=>v*9.31322574615479e-11",
         "u259": "(v)=>v*9.5367431640625e-08",
-        "u260": "(v)=>v*9.765625e-05",
-        "u261": "(v)=>v*0.1"
+        "u260": "(v)=>v*9.765625e-05"
       },
       "description": "A decibyte (dB) is an SI unit of data applying the deci‑ prefix (10^-1). One decibyte equals 0.1 bytes. The deci prefix denotes a factor of 10^-1, so 1 decibyte equals 10^-1 bytes. Such scaled magnitudes are primarily encountered in general information‑technology specifications."
     },
@@ -7981,9 +7969,7 @@
         "u257": "(v)=>v*9.09494701772928e-15",
         "u258": "(v)=>v*9.31322574615479e-12",
         "u259": "(v)=>v*9.5367431640625e-09",
-        "u260": "(v)=>v*9.765625e-06",
-        "u261": "(v)=>v*0.01"
-      },
+        "u260": "(v)=>v*9.765625e-06"      },
       "description": "A centibyte (cB) is an SI unit of data applying the centi‑ prefix (10^-2). One centibyte equals 0.01 bytes. The centi prefix denotes a factor of 10^-2, so 1 centibyte equals 10^-2 bytes. Such scaled magnitudes are primarily encountered in general information‑technology specifications."
     },
     {
@@ -8019,8 +8005,7 @@
         "u257": "(v)=>v*9.09494701772928e-16",
         "u258": "(v)=>v*9.31322574615479e-13",
         "u259": "(v)=>v*9.5367431640625e-10",
-        "u260": "(v)=>v*9.765625e-07",
-        "u261": "(v)=>v*0.001"
+        "u260": "(v)=>v*9.765625e-07"
       },
       "description": "A millibyte (mB) is an SI unit of data applying the milli‑ prefix (10^-3). One millibyte equals 0.001 bytes. The milli prefix denotes a factor of 10^-3, so 1 millibyte equals 10^-3 bytes. Such scaled magnitudes are primarily encountered in general information‑technology specifications."
     },
@@ -8057,8 +8042,7 @@
         "u257": "(v)=>v*9.09494701772928e-19",
         "u258": "(v)=>v*9.31322574615478e-16",
         "u259": "(v)=>v*9.5367431640625e-13",
-        "u260": "(v)=>v*9.765625e-10",
-        "u261": "(v)=>v*1e-06"
+        "u260": "(v)=>v*9.765625e-10"
       },
       "description": "A microbyte (μB) is an SI unit of data applying the micro‑ prefix (10^-6). One microbyte equals 1e-06 bytes. The micro prefix denotes a factor of 10^-6, so 1 microbyte equals 10^-6 bytes. Such very small magnitudes are primarily encountered in embedded and sensor‑network telemetry."
     },
@@ -8095,9 +8079,7 @@
         "u257": "(v)=>v*9.09494701772928e-22",
         "u258": "(v)=>v*9.31322574615479e-19",
         "u259": "(v)=>v*9.5367431640625e-16",
-        "u260": "(v)=>v*9.765625e-13",
-        "u261": "(v)=>v*1e-09"
-      },
+        "u260": "(v)=>v*9.765625e-13"      },
       "description": "A nanobyte (nB) is an SI unit of data applying the nano‑ prefix (10^-9). One nanobyte equals 1e-09 bytes. The nano prefix denotes a factor of 10^-9, so 1 nanobyte equals 10^-9 bytes. Such very small magnitudes are primarily encountered in embedded and sensor‑network telemetry."
     },
     {
@@ -8133,8 +8115,7 @@
         "u257": "(v)=>v*9.09494701772928e-25",
         "u258": "(v)=>v*9.31322574615478e-22",
         "u259": "(v)=>v*9.5367431640625e-19",
-        "u260": "(v)=>v*9.765625e-16",
-        "u261": "(v)=>v*1e-12"
+        "u260": "(v)=>v*9.765625e-16"
       },
       "description": "A picobyte (pB) is an SI unit of data applying the pico‑ prefix (10^-12). One picobyte equals 1e-12 bytes. The pico prefix denotes a factor of 10^-12, so 1 picobyte equals 10^-12 bytes. Such extremely small magnitudes are primarily encountered in embedded and sensor‑network telemetry."
     },
@@ -8171,8 +8152,7 @@
         "u257": "(v)=>v*9.09494701772928e-28",
         "u258": "(v)=>v*9.31322574615479e-25",
         "u259": "(v)=>v*9.5367431640625e-22",
-        "u260": "(v)=>v*9.765625e-19",
-        "u261": "(v)=>v*1e-15"
+        "u260": "(v)=>v*9.765625e-19"
       },
       "description": "A femtobyte (fB) is an SI unit of data applying the femto‑ prefix (10^-15). One femtobyte equals 1e-15 bytes. The femto prefix denotes a factor of 10^-15, so 1 femtobyte equals 10^-15 bytes. Such extremely small magnitudes are primarily encountered in embedded and sensor‑network telemetry."
     },
@@ -8209,8 +8189,7 @@
         "u257": "(v)=>v*9.09494701772928e-31",
         "u258": "(v)=>v*9.31322574615479e-28",
         "u259": "(v)=>v*9.5367431640625e-25",
-        "u260": "(v)=>v*9.765625e-22",
-        "u261": "(v)=>v*1e-18"
+        "u260": "(v)=>v*9.765625e-22"
       },
       "description": "A attobyte (aB) is an SI unit of data applying the atto‑ prefix (10^-18). One attobyte equals 1e-18 bytes. The atto prefix denotes a factor of 10^-18, so 1 attobyte equals 10^-18 bytes. Such extremely small magnitudes are primarily encountered in embedded and sensor‑network telemetry."
     },
@@ -8247,8 +8226,7 @@
         "u257": "(v)=>v*9.09494701772928e-34",
         "u258": "(v)=>v*9.31322574615478e-31",
         "u259": "(v)=>v*9.5367431640625e-28",
-        "u260": "(v)=>v*9.765625e-25",
-        "u261": "(v)=>v*1e-21"
+        "u260": "(v)=>v*9.765625e-25"
       },
       "description": "A zeptobyte (zB) is an SI unit of data applying the zepto‑ prefix (10^-21). One zeptobyte equals 1e-21 bytes. The zepto prefix denotes a factor of 10^-21, so 1 zeptobyte equals 10^-21 bytes. Such extremely small magnitudes are primarily encountered in embedded and sensor‑network telemetry."
     },
@@ -8285,8 +8263,7 @@
         "u257": "(v)=>v*9.09494701772928e-37",
         "u258": "(v)=>v*9.31322574615478e-34",
         "u259": "(v)=>v*9.5367431640625e-31",
-        "u260": "(v)=>v*9.765625e-28",
-        "u261": "(v)=>v*1e-24"
+        "u260": "(v)=>v*9.765625e-28"
       },
       "description": "A yoctobyte (yB) is an SI unit of data applying the yocto‑ prefix (10^-24). One yoctobyte equals 1e-24 bytes. The yocto prefix denotes a factor of 10^-24, so 1 yoctobyte equals 10^-24 bytes. Such extremely small magnitudes are primarily encountered in embedded and sensor‑network telemetry."
     },
@@ -8323,8 +8300,7 @@
         "u257": "(v)=>v*1099511627776",
         "u258": "(v)=>v*1.12589990684262e+15",
         "u259": "(v)=>v*1.15292150460685e+18",
-        "u260": "(v)=>v*1.18059162071741e+21",
-        "u261": "(v)=>v*1.20892581961463e+24"
+        "u260": "(v)=>v*1.18059162071741e+21"
       },
       "description": "A yobibyte (YiB) is a unit of data equal to 1.20892582e+24 bytes."
     },
@@ -8361,8 +8337,7 @@
         "u257": "(v)=>v*1073741824",
         "u258": "(v)=>v*1099511627776",
         "u259": "(v)=>v*1.12589990684262e+15",
-        "u260": "(v)=>v*1.15292150460685e+18",
-        "u261": "(v)=>v*1.18059162071741e+21"
+        "u260": "(v)=>v*1.15292150460685e+18"
       },
       "description": "A zebibyte (ZiB) is a unit of data equal to 1.180591621e+21 bytes."
     },
@@ -8399,8 +8374,7 @@
         "u257": "(v)=>v*1048576",
         "u258": "(v)=>v*1073741824",
         "u259": "(v)=>v*1099511627776",
-        "u260": "(v)=>v*1.12589990684262e+15",
-        "u261": "(v)=>v*1.15292150460685e+18"
+        "u260": "(v)=>v*1.12589990684262e+15"
       },
       "description": "A exbibyte (EiB) is a unit of data equal to 1.152921505e+18 bytes."
     },
@@ -8437,8 +8411,7 @@
         "u257": "(v)=>v*1024",
         "u258": "(v)=>v*1048576",
         "u259": "(v)=>v*1073741824",
-        "u260": "(v)=>v*1099511627776",
-        "u261": "(v)=>v*1.12589990684262e+15"
+        "u260": "(v)=>v*1099511627776"
       },
       "description": "A pebibyte (PiB) is a unit of data equal to 1.125899907e+15 bytes."
     },
@@ -8475,8 +8448,7 @@
         "u256": "(v)=>v*0.0009765625",
         "u258": "(v)=>v*1024",
         "u259": "(v)=>v*1048576",
-        "u260": "(v)=>v*1073741824",
-        "u261": "(v)=>v*1099511627776"
+        "u260": "(v)=>v*1073741824"
       },
       "description": "A tebibyte (TiB) is a unit of data equal to 1.099511628e+12 bytes."
     },
@@ -8513,8 +8485,7 @@
         "u256": "(v)=>v*9.5367431640625e-07",
         "u257": "(v)=>v*0.0009765625",
         "u259": "(v)=>v*1024",
-        "u260": "(v)=>v*1048576",
-        "u261": "(v)=>v*1073741824"
+        "u260": "(v)=>v*1048576"
       },
       "description": "A gibibyte (GiB) is a unit of data equal to 1073741824 bytes."
     },
@@ -8551,8 +8522,7 @@
         "u256": "(v)=>v*9.31322574615479e-10",
         "u257": "(v)=>v*9.5367431640625e-07",
         "u258": "(v)=>v*0.0009765625",
-        "u260": "(v)=>v*1024",
-        "u261": "(v)=>v*1048576"
+        "u260": "(v)=>v*1024"
       },
       "description": "A mebibyte (MiB) is a unit of data equal to 1048576 bytes."
     },
@@ -8589,48 +8559,9 @@
         "u256": "(v)=>v*9.09494701772928e-13",
         "u257": "(v)=>v*9.31322574615479e-10",
         "u258": "(v)=>v*9.5367431640625e-07",
-        "u259": "(v)=>v*0.0009765625",
-        "u261": "(v)=>v*1024"
+        "u259": "(v)=>v*0.0009765625"
       },
       "description": "A kibibyte (KiB) is a unit of data equal to 1024 bytes."
-    },
-    {
-      "id": "u261",
-      "name": "byte",
-      "shortName": "B",
-      "categoryId": "c7",
-      "conversions": {
-        "u232": "(v)=>v*1e-24",
-        "u233": "(v)=>v*1e-21",
-        "u234": "(v)=>v*1e-18",
-        "u235": "(v)=>v*1e-15",
-        "u236": "(v)=>v*1e-12",
-        "u237": "(v)=>v*1e-09",
-        "u238": "(v)=>v*1e-06",
-        "u239": "(v)=>v*0.001",
-        "u240": "(v)=>v*0.01",
-        "u241": "(v)=>v*0.1",
-        "u242": "(v)=>v*1",
-        "u243": "(v)=>v*10",
-        "u244": "(v)=>v*100",
-        "u245": "(v)=>v*1000",
-        "u246": "(v)=>v*1000000",
-        "u247": "(v)=>v*1000000000",
-        "u248": "(v)=>v*1000000000000",
-        "u249": "(v)=>v*1e+15",
-        "u250": "(v)=>v*1e+18",
-        "u251": "(v)=>v*1e+21",
-        "u252": "(v)=>v*1e+24",
-        "u253": "(v)=>v*8.27180612553028e-25",
-        "u254": "(v)=>v*8.470329472543e-22",
-        "u255": "(v)=>v*8.67361737988404e-19",
-        "u256": "(v)=>v*8.88178419700125e-16",
-        "u257": "(v)=>v*9.09494701772928e-13",
-        "u258": "(v)=>v*9.31322574615479e-10",
-        "u259": "(v)=>v*9.5367431640625e-07",
-        "u260": "(v)=>v*0.0009765625"
-      },
-      "description": "A byte (B) is a unit of digital information consisting of eight bits; it is commonly the amount needed to encode a single character."
     },
     {
       "id": "u262",
@@ -8658,8 +8589,6 @@
         "u280": "(v)=>v*1e+42",
         "u281": "(v)=>v*1e+45",
         "u282": "(v)=>v*1e+48",
-        "u498": "(v)=>v*1e+27",
-        "u499": "(v)=>v*1e+24",
         "u500": "(v)=>v*1.66666666666667e+22",
         "u501": "(v)=>v*2.77777777777778e+20",
         "u502": "(v)=>v*1.15740740740741e+19",
@@ -8694,8 +8623,6 @@
         "u280": "(v)=>v*1e+39",
         "u281": "(v)=>v*1e+42",
         "u282": "(v)=>v*1e+45",
-        "u498": "(v)=>v*1e+24",
-        "u499": "(v)=>v*1e+21",
         "u500": "(v)=>v*1.66666666666667e+19",
         "u501": "(v)=>v*2.77777777777778e+17",
         "u502": "(v)=>v*1.15740740740741e+16",
@@ -8730,8 +8657,6 @@
         "u280": "(v)=>v*1e+36",
         "u281": "(v)=>v*1e+39",
         "u282": "(v)=>v*1e+42",
-        "u498": "(v)=>v*1e+21",
-        "u499": "(v)=>v*1e+18",
         "u500": "(v)=>v*1.66666666666667e+16",
         "u501": "(v)=>v*277777777777778",
         "u502": "(v)=>v*11574074074074.1",
@@ -8766,8 +8691,6 @@
         "u280": "(v)=>v*1e+33",
         "u281": "(v)=>v*1e+36",
         "u282": "(v)=>v*1e+39",
-        "u498": "(v)=>v*1e+18",
-        "u499": "(v)=>v*1e+15",
         "u500": "(v)=>v*16666666666666.7",
         "u501": "(v)=>v*277777777777.778",
         "u502": "(v)=>v*11574074074.0741",
@@ -8802,8 +8725,6 @@
         "u280": "(v)=>v*1e+30",
         "u281": "(v)=>v*1e+33",
         "u282": "(v)=>v*1e+36",
-        "u498": "(v)=>v*1e+15",
-        "u499": "(v)=>v*1000000000000",
         "u500": "(v)=>v*16666666666.6667",
         "u501": "(v)=>v*277777777.777778",
         "u502": "(v)=>v*11574074.0740741",
@@ -8838,8 +8759,6 @@
         "u280": "(v)=>v*1e+27",
         "u281": "(v)=>v*1e+30",
         "u282": "(v)=>v*1e+33",
-        "u498": "(v)=>v*1000000000000",
-        "u499": "(v)=>v*1000000000",
         "u500": "(v)=>v*16666666.6666667",
         "u501": "(v)=>v*277777.777777778",
         "u502": "(v)=>v*11574.0740740741",
@@ -8874,8 +8793,6 @@
         "u280": "(v)=>v*1e+24",
         "u281": "(v)=>v*1e+27",
         "u282": "(v)=>v*1e+30",
-        "u498": "(v)=>v*1000000000",
-        "u499": "(v)=>v*1000000",
         "u500": "(v)=>v*16666.6666666667",
         "u501": "(v)=>v*277.777777777778",
         "u502": "(v)=>v*11.5740740740741",
@@ -8910,8 +8827,6 @@
         "u280": "(v)=>v*1e+21",
         "u281": "(v)=>v*1e+24",
         "u282": "(v)=>v*1e+27",
-        "u498": "(v)=>v*1000000",
-        "u499": "(v)=>v*1000",
         "u500": "(v)=>v*16.6666666666667",
         "u501": "(v)=>v*0.277777777777778",
         "u502": "(v)=>v*0.0115740740740741",
@@ -8946,8 +8861,6 @@
         "u280": "(v)=>v*1e+20",
         "u281": "(v)=>v*1e+23",
         "u282": "(v)=>v*1e+26",
-        "u498": "(v)=>v*100000",
-        "u499": "(v)=>v*100",
         "u500": "(v)=>v*1.66666666666667",
         "u501": "(v)=>v*0.0277777777777778",
         "u502": "(v)=>v*0.00115740740740741",
@@ -8982,8 +8895,6 @@
         "u280": "(v)=>v*1e+19",
         "u281": "(v)=>v*1e+22",
         "u282": "(v)=>v*1e+25",
-        "u498": "(v)=>v*10000",
-        "u499": "(v)=>v*10",
         "u500": "(v)=>v*0.166666666666667",
         "u501": "(v)=>v*0.00277777777777778",
         "u502": "(v)=>v*0.000115740740740741",
@@ -9018,8 +8929,6 @@
         "u280": "(v)=>v*1e+18",
         "u281": "(v)=>v*1e+21",
         "u282": "(v)=>v*1e+24",
-        "u498": "(v)=>v*1000",
-        "u499": "(v)=>v*1",
         "u500": "(v)=>v*0.0166666666666667",
         "u501": "(v)=>v*0.000277777777777778",
         "u502": "(v)=>v*1.15740740740741e-05",
@@ -9054,8 +8963,6 @@
         "u280": "(v)=>v*1e+17",
         "u281": "(v)=>v*1e+20",
         "u282": "(v)=>v*1e+23",
-        "u498": "(v)=>v*100",
-        "u499": "(v)=>v*0.1",
         "u500": "(v)=>v*0.00166666666666667",
         "u501": "(v)=>v*2.77777777777778e-05",
         "u502": "(v)=>v*1.15740740740741e-06",
@@ -9090,8 +8997,6 @@
         "u280": "(v)=>v*1e+16",
         "u281": "(v)=>v*1e+19",
         "u282": "(v)=>v*1e+22",
-        "u498": "(v)=>v*10",
-        "u499": "(v)=>v*0.01",
         "u500": "(v)=>v*0.000166666666666667",
         "u501": "(v)=>v*2.77777777777778e-06",
         "u502": "(v)=>v*1.15740740740741e-07",
@@ -9126,8 +9031,6 @@
         "u280": "(v)=>v*1e+15",
         "u281": "(v)=>v*1e+18",
         "u282": "(v)=>v*1e+21",
-        "u498": "(v)=>v*1",
-        "u499": "(v)=>v*0.001",
         "u500": "(v)=>v*1.66666666666667e-05",
         "u501": "(v)=>v*2.77777777777778e-07",
         "u502": "(v)=>v*1.15740740740741e-08",
@@ -9162,8 +9065,6 @@
         "u280": "(v)=>v*1000000000000",
         "u281": "(v)=>v*1e+15",
         "u282": "(v)=>v*1e+18",
-        "u498": "(v)=>v*0.001",
-        "u499": "(v)=>v*1e-06",
         "u500": "(v)=>v*1.66666666666667e-08",
         "u501": "(v)=>v*2.77777777777778e-10",
         "u502": "(v)=>v*1.15740740740741e-11",
@@ -9198,8 +9099,6 @@
         "u280": "(v)=>v*1000000000",
         "u281": "(v)=>v*1000000000000",
         "u282": "(v)=>v*1e+15",
-        "u498": "(v)=>v*1e-06",
-        "u499": "(v)=>v*1e-09",
         "u500": "(v)=>v*1.66666666666667e-11",
         "u501": "(v)=>v*2.77777777777778e-13",
         "u502": "(v)=>v*1.15740740740741e-14",
@@ -9234,8 +9133,6 @@
         "u280": "(v)=>v*1000000",
         "u281": "(v)=>v*1000000000",
         "u282": "(v)=>v*1000000000000",
-        "u498": "(v)=>v*1e-09",
-        "u499": "(v)=>v*1e-12",
         "u500": "(v)=>v*1.66666666666667e-14",
         "u501": "(v)=>v*2.77777777777778e-16",
         "u502": "(v)=>v*1.15740740740741e-17",
@@ -9270,8 +9167,6 @@
         "u280": "(v)=>v*1000",
         "u281": "(v)=>v*1000000",
         "u282": "(v)=>v*1000000000",
-        "u498": "(v)=>v*1e-12",
-        "u499": "(v)=>v*1e-15",
         "u500": "(v)=>v*1.66666666666667e-17",
         "u501": "(v)=>v*2.77777777777778e-19",
         "u502": "(v)=>v*1.15740740740741e-20",
@@ -9306,8 +9201,6 @@
         "u279": "(v)=>v*0.001",
         "u281": "(v)=>v*1000",
         "u282": "(v)=>v*1000000",
-        "u498": "(v)=>v*1e-15",
-        "u499": "(v)=>v*1e-18",
         "u500": "(v)=>v*1.66666666666667e-20",
         "u501": "(v)=>v*2.77777777777778e-22",
         "u502": "(v)=>v*1.15740740740741e-23",
@@ -9342,8 +9235,6 @@
         "u279": "(v)=>v*1e-06",
         "u280": "(v)=>v*0.001",
         "u282": "(v)=>v*1000",
-        "u498": "(v)=>v*1e-18",
-        "u499": "(v)=>v*1e-21",
         "u500": "(v)=>v*1.66666666666667e-23",
         "u501": "(v)=>v*2.77777777777778e-25",
         "u502": "(v)=>v*1.15740740740741e-26",
@@ -9378,8 +9269,6 @@
         "u279": "(v)=>v*1e-09",
         "u280": "(v)=>v*1e-06",
         "u281": "(v)=>v*0.001",
-        "u498": "(v)=>v*1e-21",
-        "u499": "(v)=>v*1e-24",
         "u500": "(v)=>v*1.66666666666667e-26",
         "u501": "(v)=>v*2.77777777777778e-28",
         "u502": "(v)=>v*1.15740740740741e-29",
@@ -15670,78 +15559,6 @@
       "description": "A carat (carat) is a unit of mass equal to 0.0002 grams. A metric carat (ct) is a mass unit for gemstones, defined as exactly 200 milligrams (0.2 grams). Large diamonds are often weighed to the hundred‑thousandth of a carat."
     },
     {
-      "id": "u498",
-      "name": "millisecond",
-      "shortName": "ms",
-      "categoryId": "c25",
-      "conversions": {
-        "u262": "(v)=>v*1e-27",
-        "u263": "(v)=>v*1e-24",
-        "u264": "(v)=>v*1e-21",
-        "u265": "(v)=>v*1e-18",
-        "u266": "(v)=>v*1e-15",
-        "u267": "(v)=>v*1e-12",
-        "u268": "(v)=>v*1e-09",
-        "u269": "(v)=>v*1e-06",
-        "u270": "(v)=>v*1e-05",
-        "u271": "(v)=>v*0.0001",
-        "u272": "(v)=>v*0.001",
-        "u273": "(v)=>v*0.01",
-        "u274": "(v)=>v*0.1",
-        "u275": "(v)=>v*1",
-        "u276": "(v)=>v*1000",
-        "u277": "(v)=>v*1000000",
-        "u278": "(v)=>v*1000000000",
-        "u279": "(v)=>v*1000000000000",
-        "u280": "(v)=>v*1e+15",
-        "u281": "(v)=>v*1e+18",
-        "u282": "(v)=>v*1e+21",
-        "u499": "(v)=>v*0.001",
-        "u500": "(v)=>v*1.66666666666667e-05",
-        "u501": "(v)=>v*2.77777777777778e-07",
-        "u502": "(v)=>v*1.15740740740741e-08",
-        "u503": "(v)=>v*1.65343915343915e-09",
-        "u504": "(v)=>v*3.16880878140289e-11"
-      },
-      "description": "A millisecond (ms) is an SI unit of time applying the milli‑ prefix (10^-3). One millisecond equals 0.001 seconds. The milli prefix denotes a factor of 10^-3, so 1 millisecond equals 10^-3 seconds. Such scaled magnitudes are primarily encountered in scientific and engineering contexts."
-    },
-    {
-      "id": "u499",
-      "name": "second",
-      "shortName": "s",
-      "categoryId": "c25",
-      "conversions": {
-        "u262": "(v)=>v*1e-24",
-        "u263": "(v)=>v*1e-21",
-        "u264": "(v)=>v*1e-18",
-        "u265": "(v)=>v*1e-15",
-        "u266": "(v)=>v*1e-12",
-        "u267": "(v)=>v*1e-09",
-        "u268": "(v)=>v*1e-06",
-        "u269": "(v)=>v*0.001",
-        "u270": "(v)=>v*0.01",
-        "u271": "(v)=>v*0.1",
-        "u272": "(v)=>v*1",
-        "u273": "(v)=>v*10",
-        "u274": "(v)=>v*100",
-        "u275": "(v)=>v*1000",
-        "u276": "(v)=>v*1000000",
-        "u277": "(v)=>v*1000000000",
-        "u278": "(v)=>v*1000000000000",
-        "u279": "(v)=>v*1e+15",
-        "u280": "(v)=>v*1e+18",
-        "u281": "(v)=>v*1e+21",
-        "u282": "(v)=>v*1e+24",
-        "u498": "(v)=>v*1000",
-        "u500": "(v)=>v*0.0166666666666667",
-        "u501": "(v)=>v*0.000277777777777778",
-        "u502": "(v)=>v*1.15740740740741e-05",
-        "u503": "(v)=>v*1.65343915343915e-06",
-        "u504": "(v)=>v*3.16880878140289e-08"
-      },
-      "description": "The second (s) is the SI base unit of time, defined via the caesium‑133 ground‑state hyperfine transition frequency (9 192 631 770 Hz)."
-    },
-    {
       "id": "u500",
       "name": "minute",
       "shortName": "min",
@@ -15768,8 +15585,6 @@
         "u280": "(v)=>v*6e+19",
         "u281": "(v)=>v*6e+22",
         "u282": "(v)=>v*6e+25",
-        "u498": "(v)=>v*60000",
-        "u499": "(v)=>v*60",
         "u501": "(v)=>v*0.0166666666666667",
         "u502": "(v)=>v*0.000694444444444444",
         "u503": "(v)=>v*9.92063492063492e-05",
@@ -15804,8 +15619,6 @@
         "u280": "(v)=>v*3.6e+21",
         "u281": "(v)=>v*3.6e+24",
         "u282": "(v)=>v*3.6e+27",
-        "u498": "(v)=>v*3600000",
-        "u499": "(v)=>v*3600",
         "u500": "(v)=>v*60",
         "u502": "(v)=>v*0.0416666666666667",
         "u503": "(v)=>v*0.00595238095238095",
@@ -15840,8 +15653,6 @@
         "u280": "(v)=>v*8.64e+22",
         "u281": "(v)=>v*8.64e+25",
         "u282": "(v)=>v*8.64e+28",
-        "u498": "(v)=>v*86400000",
-        "u499": "(v)=>v*86400",
         "u500": "(v)=>v*1440",
         "u501": "(v)=>v*24",
         "u503": "(v)=>v*0.142857142857143",
@@ -15876,8 +15687,6 @@
         "u280": "(v)=>v*6.048e+23",
         "u281": "(v)=>v*6.048e+26",
         "u282": "(v)=>v*6.048e+29",
-        "u498": "(v)=>v*604800000",
-        "u499": "(v)=>v*604800",
         "u500": "(v)=>v*10080",
         "u501": "(v)=>v*168",
         "u502": "(v)=>v*7",
@@ -15912,8 +15721,6 @@
         "u280": "(v)=>v*3.15576e+25",
         "u281": "(v)=>v*3.15576e+28",
         "u282": "(v)=>v*3.15576e+31",
-        "u498": "(v)=>v*31557600000",
-        "u499": "(v)=>v*31557600",
         "u500": "(v)=>v*525960",
         "u501": "(v)=>v*8766",
         "u502": "(v)=>v*365.25",
