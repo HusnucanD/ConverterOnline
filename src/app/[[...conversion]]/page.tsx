@@ -7,10 +7,10 @@ import UnitsInfo from "@/app/components/UnitsInfo";
 import type { UnitsPayload } from "@/app/model/types";
 import { Metadata } from "next";
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: any): Promise<Metadata> {
   return {
     alternates: {
-      canonical: `/${params.slug}`,
+      canonical: `/${params.conversion}`,
     },
   };
 }
