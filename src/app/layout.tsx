@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Toaster } from "sonner";
 import "@/app/globals.css";
 
-export async function generateMetadata(): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   return {
     title: {
       default: "Converter Online – Free Unit Converter",
@@ -93,6 +93,10 @@ export async function generateMetadata(): Promise<Metadata> {
       shortcut: "/favicon.ico",
       apple: "/favicon.ico",
     },
+    alternates: {
+      canonical: `/blog/${params.slug}`,
+    },
+    metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://converter.online"),
     manifest: "/site.webmanifest",
   };
 }
