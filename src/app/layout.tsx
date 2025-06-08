@@ -93,9 +93,6 @@ export async function generateMetadata({ params }: { params: { slug: string } })
       shortcut: "/favicon.ico",
       apple: "/favicon.ico",
     },
-    alternates: {
-      canonical: `/${params.slug}`,
-    },
     metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://converter.online"),
     manifest: "/site.webmanifest",
   };

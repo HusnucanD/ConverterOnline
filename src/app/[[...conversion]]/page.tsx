@@ -5,6 +5,15 @@ import UnitsHeader from "@/app/components/UnitsHeader";
 import UnitsConverter from "@/app/components/UnitsConverter";
 import UnitsInfo from "@/app/components/UnitsInfo";
 import type { UnitsPayload } from "@/app/model/types";
+import { Metadata } from "next";
+
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+  return {
+    alternates: {
+      canonical: `/${params.slug}`,
+    },
+  };
+}
 
 export const revalidate = false;
 
