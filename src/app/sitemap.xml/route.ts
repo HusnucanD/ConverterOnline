@@ -32,7 +32,14 @@ export async function GET() {
                 ${urls.map((loc) => `<url><loc>${loc}</loc><lastmod>${lastmod}</lastmod></url>`).join("\n")}
                 </urlset>`;
   return new NextResponse(xml, {
-    headers: { "Content-Type": "application/xml" },
+    status: 200,
+
+    headers: {
+      "Content-Type": "application/xml; charset=UTF-8",
+      "Cache-Control": "public, max-age=0, s-maxage=3600, must-revalidate",
+      // Tell crawlers exactly when the file last changed.
+      "Last-Modified": new Date(lastUpdated).toUTCString(),
+    },
   });
 }
 
