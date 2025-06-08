@@ -94,11 +94,6 @@ export async function generateMetadata(): Promise<Metadata> {
       apple: "/favicon.ico",
     },
     manifest: "/site.webmanifest",
-    alternates: {
-      types: {
-        "application/xml": "/sitemap.xml",
-      },
-    },
   };
 }
 
