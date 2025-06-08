@@ -37,8 +37,7 @@ export async function GET() {
     headers: {
       "Content-Type": "application/xml; charset=UTF-8",
       "Cache-Control": "public, max-age=0, s-maxage=3600, must-revalidate",
-      // Tell crawlers exactly when the file last changed.
-      "Last-Modified": new Date(lastUpdated).toUTCString(),
+      "Last-Modified": new Date(lastmod).toUTCString(),
     },
   });
 }
