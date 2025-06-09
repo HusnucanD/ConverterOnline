@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Toaster } from "sonner";
 import "@/app/globals.css";
+import Script from "next/script";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -101,6 +102,15 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <Script
+          id="adsense-init"
+          async
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID}`}
+        />
+      </head>
       <body className="bg-striped text-foreground selection:bg-primary selection:text-primary-foreground">
         <div className="md:min-h-screen antialiased flex md:pt-3">{children}</div>
         <Toaster
