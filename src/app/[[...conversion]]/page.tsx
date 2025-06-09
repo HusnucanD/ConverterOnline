@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import UnitsHeader from "@/app/components/UnitsHeader";
 import UnitsConverter from "@/app/components/UnitsConverter";
 import UnitsInfo from "@/app/components/UnitsInfo";
-import AdsSection from "@/app/components/AdsSection";
+// import AdsSection from "@/app/components/AdsSection";
 import type { UnitsPayload } from "@/app/model/types";
 
 export async function generateMetadata({ params }: any): Promise<Metadata> {
