@@ -12,24 +12,27 @@ export default function AdsSection({
   responsive?: boolean;
   style?: React.CSSProperties;
 }) {
-  if (process.env.NODE_ENV != "production") {
-    return null;
-  }
   useEffect(() => {
     if (typeof window === "undefined") return;
     try {
       ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
-    } catch (_) {}
+    } catch (error) {
+      console.log(error);
+    }
   }, []);
-  return (
-    <ins
-      className="adsbygoogle"
-      style={style}
-      data-ad-client={process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID}
-      data-ad-slot={slot}
-      data-ad-format={format}
-      data-ad-layout="in-article"
-      data-full-width-responsive={responsive ? "true" : "false"}
-    />
-  );
+  if (process.env.NODE_ENV != "production") {
+    return null;
+  } else {
+    return (
+      <ins
+        className="adsbygoogle"
+        style={style}
+        data-ad-client={process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID}
+        data-ad-slot={slot}
+        data-ad-format={format}
+        data-ad-layout="in-article"
+        data-full-width-responsive={responsive ? "true" : "false"}
+      />
+    );
+  }
 }
