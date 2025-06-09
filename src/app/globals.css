@@ -44,7 +44,7 @@
 }
 
 :root {
-  --custom-card: #fafafa;
+  --custom-card: rgb(250, 250, 250);
 }
 
 :root {
@@ -56,7 +56,7 @@
   --popover-foreground: #000000;
   --primary: #d65c5c;
   --primary-foreground: #ffffff;
-  --secondary: #cccc33;
+  --secondary: rgb(204, 204, 51);
   --secondary-foreground: #000000;
   --muted: #f0f0f0;
   --muted-foreground: #333333;
@@ -232,8 +232,11 @@
 .bg-striped {
   background: repeating-linear-gradient(
     135deg,
-    rgba(82, 173, 82, 0.25) 0 20px,
-    rgba(214, 92, 92, 0.25) 20px 40px
+    rgba(82, 173, 82, 0.225) 0 20px,
+    rgba(214, 92, 92, 0.225) 20px 40px,
+    rgba(250, 250, 250, 0.225) 40px 60px,
+    rgba(204, 204, 51, 0.225) 60px 80px
+    
   );
 }
 
