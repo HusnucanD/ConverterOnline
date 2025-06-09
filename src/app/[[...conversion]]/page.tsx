@@ -1,11 +1,12 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { redirect, RedirectType } from "next/navigation";
+import { Metadata } from "next";
 import UnitsHeader from "@/app/components/UnitsHeader";
 import UnitsConverter from "@/app/components/UnitsConverter";
 import UnitsInfo from "@/app/components/UnitsInfo";
+import AdsSection from "@/app/components/AdsSection";
 import type { UnitsPayload } from "@/app/model/types";
-import { Metadata } from "next";
 
 export async function generateMetadata({ params }: any): Promise<Metadata> {
   return {
@@ -52,6 +53,7 @@ export default async function Page({ params }: any) {
             <div className="mx-auto max-w-5xl h-auto md:min-h-full flex flex-col gap-5 pb-10">
               <UnitsHeader />
               <UnitsConverter categories={data.categories} units={data.units} fromId={fromId} toId={toId} />
+              <AdsSection slot="2643060303" />
               <UnitsInfo units={data.units} fromId={fromId} toId={toId} />
             </div>
           </main>

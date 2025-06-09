@@ -1,5 +1,5 @@
 "use client";
-// import { useEffect } from "react";
+import { useEffect } from "react";
 
 export default function AdsSection({
   slot,
@@ -12,13 +12,15 @@ export default function AdsSection({
   responsive?: boolean;
   style?: React.CSSProperties;
 }) {
-  // useEffect(() => {
-  //   if (typeof window === "undefined") return;
-  //   try {
-  //     (window.adsbygoogle = window.adsbygoogle || []).push({});
-  //   } catch (_) {}
-  // }, []);
-
+  if (process.env.NODE_ENV != "production") {
+    return null;
+  }
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    try {
+      ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
+    } catch (_) {}
+  }, []);
   return (
     <ins
       className="adsbygoogle"
@@ -26,6 +28,7 @@ export default function AdsSection({
       data-ad-client={process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID}
       data-ad-slot={slot}
       data-ad-format={format}
+      data-ad-layout="in-article"
       data-full-width-responsive={responsive ? "true" : "false"}
     />
   );
