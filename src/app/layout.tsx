@@ -59,7 +59,7 @@ export async function generateMetadata(): Promise<Metadata> {
       locale: "en_US",
       images: [
         {
-          url: "https://converter.online/logo.svg",
+          url: "https://converter.online/logo2.svg",
           width: 1200,
           height: 1200,
           alt: "Converter Online – Free Unit Converter",
@@ -73,7 +73,7 @@ export async function generateMetadata(): Promise<Metadata> {
       title: "Converter Online – Free Unit Converter",
       description:
         "Convert over 500 units of length, mass, volume, pressure and more in one click. Fast, free & accurate",
-      images: ["https://converter.online/logo.svg"],
+      images: ["https://converter.online/logo2.svg"],
     },
     robots: {
       index: true,
