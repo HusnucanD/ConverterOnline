@@ -11,6 +11,7 @@ const nextConfig: NextConfig = {
   env: {
     NEXT_PUBLIC_SITE_URL: "https://converter.online",
     NEXT_PUBLIC_ADSENSE_CLIENT_ID: "ca-pub-9905948103459578",
+    NEXT_PUBLIC_GA_ID: "G-1G9JX0BDCE",
   },
 
   // async headers() {
