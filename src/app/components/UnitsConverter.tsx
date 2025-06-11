@@ -97,6 +97,16 @@ export default function UnitsConverter({ categories, units, fromId, toId }: Unit
         toast.error("Failed to Copy");
       });
   };
+  const handleUnitClick = (toUnitId: string) => {
+    const fromUnit = units.find((u) => u.id === fromId);
+    const toUnit = units.find((u) => u.id === toUnitId);
+    if (fromUnit && toUnit) {
+      const newPath = `/${slugify(fromUnit.name)}-2-${slugify(toUnit.name)}`;
+      if (pathname !== newPath) {
+        router.push(newPath, { scroll: false });
+      }
+    }
+  };
   return (
     <div className="flex flex-col md:flex-row gap-6">
       <Card className="w-full md:w-[50%] flex flex-col gap-2 p-5 h-111 bg-(--custom-card)">
@@ -171,7 +181,7 @@ export default function UnitsConverter({ categories, units, fromId, toId }: Unit
           {unitsInCategory.map((u) => (
             <button
               key={u.id}
-              onClick={() => console.log(u.id)}
+              onClick={() => handleUnitClick(u.id)}
               className={`text-left p-2 mr-3 rounded-md cursor-pointer flex align-middle hover:bg-accent hover:text-accent-foreground group ${
                 fromId === u.id || toId === u.id
                   ? fromId === u.id

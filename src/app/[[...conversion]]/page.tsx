@@ -1,5 +1,3 @@
-import fs from "node:fs/promises";
-import path from "node:path";
 import { redirect, RedirectType } from "next/navigation";
 import { Metadata } from "next";
 import UnitsHeader from "@/app/components/UnitsHeader";
@@ -7,6 +5,7 @@ import UnitsConverter from "@/app/components/UnitsConverter";
 import UnitsInfo from "@/app/components/UnitsInfo";
 // import AdsSection from "@/app/components/AdsSection";
 import type { UnitsPayload } from "@/app/model/types";
+import { getData } from "@/lib/data";
 
 export async function generateMetadata({ params }: any): Promise<Metadata> {
   return {
@@ -28,8 +27,7 @@ const slugify = (text: string): string => {
 };
 
 const redirectToInitialConversion = async () => {
-  const file = await fs.readFile(path.join(process.cwd(), "public", "data.json"), "utf8");
-  const data = JSON.parse(file) as UnitsPayload;
+  const data: UnitsPayload = await getData();
   const unitsInCategory1 = data.units.filter((unit) => unit.categoryId == data.categories[14].id);
   redirect(
     `${slugify(unitsInCategory1[21].name)}-2-${slugify(unitsInCategory1[12].name)}`,
@@ -38,12 +36,12 @@ const redirectToInitialConversion = async () => {
 };
 
 export default async function Page({ params }: any) {
-  if (params.conversion && params.conversion[0]) {
-    const conversionPath = params.conversion[0];
+  const { conversion } = await params;
+  if (conversion && conversion[0]) {
+    const conversionPath = conversion[0];
     const match = conversionPath.match(/^(.+)-2-(.+)$/);
     if (match) {
-      const file = await fs.readFile(path.join(process.cwd(), "public", "data.json"), "utf8");
-      const data = JSON.parse(file) as UnitsPayload;
+      const data: UnitsPayload = await getData();
       const [, fromSlug, toSlug] = match;
       const fromId = data.units.find((u) => slugify(u.name) === fromSlug)?.id || "";
       const toId = data.units.find((u) => slugify(u.name) === toSlug)?.id || "";
