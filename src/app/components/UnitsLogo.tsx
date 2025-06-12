@@ -13,8 +13,6 @@ export default function UnitsLogo() {
       xmlns="http://www.w3.org/2000/svg"
       role="img"
       aria-label="Converter Online"
-      width={130}
-      height={130}
       className={`w-23 md:w-35 mx-auto shadow-sm rounded-xl border p-1 bg-(--custom-card) ${isActive ? "active" : ""
         }`}
       version="1.2"
