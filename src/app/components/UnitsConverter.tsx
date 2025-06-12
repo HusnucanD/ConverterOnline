@@ -1,4 +1,5 @@
 "use client";
+
 import { useMemo, useState, useEffect } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { toast } from "sonner";
@@ -182,13 +183,12 @@ export default function UnitsConverter({ categories, units, fromId, toId }: Unit
             <button
               key={u.id}
               onClick={() => handleUnitClick(u.id)}
-              className={`text-left p-2 mr-3 rounded-md cursor-pointer flex align-middle hover:bg-accent hover:text-accent-foreground group ${
-                fromId === u.id || toId === u.id
+              className={`text-left p-2 mr-3 rounded-md cursor-pointer flex align-middle hover:bg-accent hover:text-accent-foreground group ${fromId === u.id || toId === u.id
                   ? fromId === u.id
                     ? "bg-primary/10 border-l-4 border-primary hover:border-primary"
                     : "bg-secondary/10 border-l-4 border-secondary hover:border-primary"
                   : ""
-              }`}
+                }`}
             >
               <div>
                 <span className="text-base font-bold text-primary group-hover:text-accent-foreground capitalize text-shadow-2xs">

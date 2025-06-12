@@ -1,5 +1,6 @@
 import { redirect, RedirectType } from "next/navigation";
 import { Metadata } from "next";
+import UnitsLogo from "@/app/components/UnitsLogo";
 import UnitsHeader from "@/app/components/UnitsHeader";
 import UnitsConverter from "@/app/components/UnitsConverter";
 import UnitsInfo from "@/app/components/UnitsInfo";
@@ -49,6 +50,7 @@ export default async function Page({ params }: any) {
         return (
           <main className="w-full px-4 md:px-8 py-6 md:py-3">
             <div className="mx-auto max-w-5xl h-auto md:min-h-full flex flex-col gap-5 pb-10">
+              <UnitsLogo />
               <UnitsHeader />
               <UnitsConverter categories={data.categories} units={data.units} fromId={fromId} toId={toId} />
               {/* <AdsSection slot="2643060303" /> */}
