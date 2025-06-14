@@ -103,12 +103,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className="scroll-smooth bg-[#fafafa]">
       <head>
-        <script
-          id="adsense-init"
-          async
-          crossOrigin="anonymous"
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID}`}
-        ></script>
+        <meta name="google-adsense-account" content="ca-pub-9905948103459578"></meta>
       </head>
       <body className="bg-striped text-foreground selection:bg-primary selection:text-primary-foreground">
         <div className="md:min-h-screen antialiased flex md:pt-3">{children}</div>
