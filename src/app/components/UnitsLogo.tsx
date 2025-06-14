@@ -136,237 +136,239 @@ export default function UnitsLogo() {
         ></path>
       </g>
       <style jsx>
-        {`
-          svg .svg-elem-1 {
-            fill: transparent;
-            -webkit-transition: fill 0.6s ease-in-out 0.5s;
-            transition: fill 0.6s ease-in-out 0.5s;
-          }
+        {
+          `
+            svg .svg-elem-1 {
+              fill: transparent;
+              -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.25s;
+                      transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.25s;
+            }
 
-          svg.active .svg-elem-1 {
-            fill: rgb(214, 92, 92);
-          }
+            svg.active .svg-elem-1 {
+              fill: rgb(214, 92, 92);
+            }
 
-          svg .svg-elem-2 {
-            fill: transparent;
-            -webkit-transition: fill 0.6s ease-in-out 0.58s;
-            transition: fill 0.6s ease-in-out 0.58s;
-          }
+            svg .svg-elem-2 {
+              fill: transparent;
+              -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.275s;
+                      transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.275s;
+            }
 
-          svg.active .svg-elem-2 {
-            fill: rgb(214, 92, 92);
-          }
+            svg.active .svg-elem-2 {
+              fill: rgb(214, 92, 92);
+            }
 
-          svg .svg-elem-3 {
-            fill: transparent;
-            -webkit-transition: fill 0.6s ease-in-out 0.66s;
-            transition: fill 0.6s ease-in-out 0.66s;
-          }
+            svg .svg-elem-3 {
+              fill: transparent;
+              -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.3s;
+                      transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.3s;
+            }
 
-          svg.active .svg-elem-3 {
-            fill: rgb(214, 92, 92);
-          }
+            svg.active .svg-elem-3 {
+              fill: rgb(214, 92, 92);
+            }
 
-          svg .svg-elem-4 {
-            fill: transparent;
-            -webkit-transition: fill 0.6s ease-in-out 0.74s;
-            transition: fill 0.6s ease-in-out 0.74s;
-          }
+            svg .svg-elem-4 {
+              fill: transparent;
+              -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.325s;
+                      transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.325s;
+            }
 
-          svg.active .svg-elem-4 {
-            fill: rgb(214, 92, 92);
-          }
+            svg.active .svg-elem-4 {
+              fill: rgb(214, 92, 92);
+            }
 
-          svg .svg-elem-5 {
-            fill: transparent;
-            -webkit-transition: fill 0.6s ease-in-out 0.8200000000000001s;
-            transition: fill 0.6s ease-in-out 0.8200000000000001s;
-          }
+            svg .svg-elem-5 {
+              fill: transparent;
+              -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.35s;
+                      transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.35s;
+            }
 
-          svg.active .svg-elem-5 {
-            fill: rgb(214, 92, 92);
-          }
+            svg.active .svg-elem-5 {
+              fill: rgb(214, 92, 92);
+            }
 
-          svg .svg-elem-6 {
-            fill: transparent;
-            -webkit-transition: fill 0.6s ease-in-out 0.9s;
-            transition: fill 0.6s ease-in-out 0.9s;
-          }
+            svg .svg-elem-6 {
+              fill: transparent;
+              -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.375s;
+                      transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.375s;
+            }
 
-          svg.active .svg-elem-6 {
-            fill: rgb(214, 92, 92);
-          }
+            svg.active .svg-elem-6 {
+              fill: rgb(214, 92, 92);
+            }
 
-          svg .svg-elem-7 {
-            fill: transparent;
-            -webkit-transition: fill 0.6s ease-in-out 0.98s;
-            transition: fill 0.6s ease-in-out 0.98s;
-          }
+            svg .svg-elem-7 {
+              fill: transparent;
+              -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.4s;
+                      transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.4s;
+            }
 
-          svg.active .svg-elem-7 {
-            fill: rgb(214, 92, 92);
-          }
+            svg.active .svg-elem-7 {
+              fill: rgb(214, 92, 92);
+            }
 
-          svg .svg-elem-8 {
-            fill: transparent;
-            -webkit-transition: fill 0.6s ease-in-out 1.06s;
-            transition: fill 0.6s ease-in-out 1.06s;
-          }
+            svg .svg-elem-8 {
+              fill: transparent;
+              -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.42500000000000004s;
+                      transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.42500000000000004s;
+            }
 
-          svg.active .svg-elem-8 {
-            fill: rgb(214, 92, 92);
-          }
+            svg.active .svg-elem-8 {
+              fill: rgb(214, 92, 92);
+            }
 
-          svg .svg-elem-9 {
-            fill: transparent;
-            -webkit-transition: fill 0.6s ease-in-out 1.1400000000000001s;
-            transition: fill 0.6s ease-in-out 1.1400000000000001s;
-          }
+            svg .svg-elem-9 {
+              fill: transparent;
+              -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.45s;
+                      transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.45s;
+            }
 
-          svg.active .svg-elem-9 {
-            fill: rgb(214, 92, 92);
-          }
+            svg.active .svg-elem-9 {
+              fill: rgb(214, 92, 92);
+            }
 
-          svg .svg-elem-10 {
-            fill: transparent;
-            -webkit-transition: fill 0.6s ease-in-out 1.22s;
-            transition: fill 0.6s ease-in-out 1.22s;
-          }
+            svg .svg-elem-10 {
+              fill: transparent;
+              -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.475s;
+                      transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.475s;
+            }
 
-          svg.active .svg-elem-10 {
-            fill: rgb(214, 92, 92);
-          }
+            svg.active .svg-elem-10 {
+              fill: rgb(214, 92, 92);
+            }
 
-          svg .svg-elem-11 {
-            fill: transparent;
-            -webkit-transition: fill 0.6s ease-in-out 1.3s;
-            transition: fill 0.6s ease-in-out 1.3s;
-          }
+            svg .svg-elem-11 {
+              fill: transparent;
+              -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s;
+                      transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s;
+            }
 
-          svg.active .svg-elem-11 {
-            fill: rgb(214, 92, 92);
-          }
+            svg.active .svg-elem-11 {
+              fill: rgb(214, 92, 92);
+            }
 
-          svg .svg-elem-12 {
-            fill: transparent;
-            -webkit-transition: fill 0.6s ease-in-out 1.38s;
-            transition: fill 0.6s ease-in-out 1.38s;
-          }
+            svg .svg-elem-12 {
+              fill: transparent;
+              -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.525s;
+                      transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.525s;
+            }
 
-          svg.active .svg-elem-12 {
-            fill: rgb(214, 92, 92);
-          }
+            svg.active .svg-elem-12 {
+              fill: rgb(214, 92, 92);
+            }
 
-          svg .svg-elem-13 {
-            fill: transparent;
-            -webkit-transition: fill 0.6s ease-in-out 1.46s;
-            transition: fill 0.6s ease-in-out 1.46s;
-          }
+            svg .svg-elem-13 {
+              fill: transparent;
+              -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.55s;
+                      transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.55s;
+            }
 
-          svg.active .svg-elem-13 {
-            fill: rgb(214, 92, 92);
-          }
+            svg.active .svg-elem-13 {
+              fill: rgb(214, 92, 92);
+            }
 
-          svg .svg-elem-14 {
-            fill: transparent;
-            -webkit-transition: fill 0.6s ease-in-out 1.54s;
-            transition: fill 0.6s ease-in-out 1.54s;
-          }
+            svg .svg-elem-14 {
+              fill: transparent;
+              -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.575s;
+                      transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.575s;
+            }
 
-          svg.active .svg-elem-14 {
-            fill: rgb(214, 92, 92);
-          }
+            svg.active .svg-elem-14 {
+              fill: rgb(214, 92, 92);
+            }
 
-          svg .svg-elem-15 {
-            fill: transparent;
-            -webkit-transition: fill 0.6s ease-in-out 1.62s;
-            transition: fill 0.6s ease-in-out 1.62s;
-          }
+            svg .svg-elem-15 {
+              fill: transparent;
+              -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6000000000000001s;
+                      transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6000000000000001s;
+            }
 
-          svg.active .svg-elem-15 {
-            fill: rgb(214, 92, 92);
-          }
+            svg.active .svg-elem-15 {
+              fill: rgb(214, 92, 92);
+            }
 
-          svg .svg-elem-16 {
-            fill: transparent;
-            -webkit-transition: fill 0.6s ease-in-out 1.7s;
-            transition: fill 0.6s ease-in-out 1.7s;
-          }
+            svg .svg-elem-16 {
+              fill: transparent;
+              -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.625s;
+                      transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.625s;
+            }
 
-          svg.active .svg-elem-16 {
-            fill: rgb(214, 92, 92);
-          }
+            svg.active .svg-elem-16 {
+              fill: rgb(214, 92, 92);
+            }
 
-          svg .svg-elem-17 {
-            fill: transparent;
-            -webkit-transition: fill 0.6s ease-in-out 1.78s;
-            transition: fill 0.6s ease-in-out 1.78s;
-          }
+            svg .svg-elem-17 {
+              fill: transparent;
+              -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.65s;
+                      transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.65s;
+            }
 
-          svg.active .svg-elem-17 {
-            fill: rgb(214, 92, 92);
-          }
+            svg.active .svg-elem-17 {
+              fill: rgb(214, 92, 92);
+            }
 
-          svg .svg-elem-18 {
-            fill: transparent;
-            -webkit-transition: fill 0.6s ease-in-out 1.86s;
-            transition: fill 0.6s ease-in-out 1.86s;
-          }
+            svg .svg-elem-18 {
+              fill: transparent;
+              -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.675s;
+                      transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.675s;
+            }
 
-          svg.active .svg-elem-18 {
-            fill: rgb(214, 92, 92);
-          }
+            svg.active .svg-elem-18 {
+              fill: rgb(214, 92, 92);
+            }
 
-          svg .svg-elem-19 {
-            fill: transparent;
-            -webkit-transition: fill 0.6s ease-in-out 1.94s;
-            transition: fill 0.6s ease-in-out 1.94s;
-          }
+            svg .svg-elem-19 {
+              fill: transparent;
+              -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.7s;
+                      transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.7s;
+            }
 
-          svg.active .svg-elem-19 {
-            fill: rgb(214, 92, 92);
-          }
+            svg.active .svg-elem-19 {
+              fill: rgb(214, 92, 92);
+            }
 
-          svg .svg-elem-20 {
-            fill: transparent;
-            -webkit-transition: fill 0.6s ease-in-out 2.02s;
-            transition: fill 0.6s ease-in-out 2.02s;
-          }
+            svg .svg-elem-20 {
+              fill: transparent;
+              -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.7250000000000001s;
+                      transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.7250000000000001s;
+            }
 
-          svg.active .svg-elem-20 {
-            fill: rgb(214, 92, 92);
-          }
+            svg.active .svg-elem-20 {
+              fill: rgb(214, 92, 92);
+            }
 
-          svg .svg-elem-21 {
-            fill: transparent;
-            -webkit-transition: fill 0.6s ease-in-out 2.1s;
-            transition: fill 0.6s ease-in-out 2.1s;
-          }
+            svg .svg-elem-21 {
+              fill: transparent;
+              -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.75s;
+                      transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.75s;
+            }
 
-          svg.active .svg-elem-21 {
-            fill: rgb(214, 92, 92);
-          }
+            svg.active .svg-elem-21 {
+              fill: rgb(214, 92, 92);
+            }
 
-          svg .svg-elem-22 {
-            fill: transparent;
-            -webkit-transition: fill 0.6s ease-in-out 2.1799999999999997s;
-            transition: fill 0.6s ease-in-out 2.1799999999999997s;
-          }
+            svg .svg-elem-22 {
+              fill: transparent;
+              -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.775s;
+                      transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.775s;
+            }
 
-          svg.active .svg-elem-22 {
-            fill: rgb(214, 92, 92);
-          }
+            svg.active .svg-elem-22 {
+              fill: rgb(214, 92, 92);
+            }
 
-          svg .svg-elem-23 {
-            fill: transparent;
-            -webkit-transition: fill 0.6s ease-in-out 2.26s;
-            transition: fill 0.6s ease-in-out 2.26s;
-          }
+            svg .svg-elem-23 {
+              fill: transparent;
+              -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+                      transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+            }
 
-          svg.active .svg-elem-23 {
-            fill: rgb(214, 92, 92);
-          }
-        `}
+            svg.active .svg-elem-23 {
+              fill: rgb(214, 92, 92);
+            }
+          `
+        }
       </style>
     </svg>
   );
