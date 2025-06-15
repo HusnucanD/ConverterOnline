@@ -9,9 +9,24 @@ import type { UnitsPayload } from "@/app/model/types";
 import { getData } from "@/lib/data";
 
 export async function generateMetadata({ params }: any): Promise<Metadata> {
+  let conversionTitle = "";
+  const { conversion } = await params;
+  if (conversion && conversion[0]) {
+    const conversionPath = conversion[0];
+    const match = conversionPath.match(/^(.+)-2-(.+)$/);
+    if (match) {
+      let [, fromSlug, toSlug]: [any, string, string] = match;
+      fromSlug = fromSlug.charAt(0).toUpperCase() + fromSlug.slice(1);
+      fromSlug = fromSlug.replaceAll("-", " ");
+      toSlug = toSlug.charAt(0).toUpperCase() + toSlug.slice(1);
+      toSlug = toSlug.replaceAll("-", " ");
+      conversionTitle = `${fromSlug} to ${toSlug}`;
+    }
+  }
   return {
+    title: conversionTitle,
     alternates: {
-      canonical: `/${params.conversion}`,
+      canonical: `/${conversion}`,
     },
   };
 }
