@@ -100,6 +100,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const isProduction = process.env.NODE_ENV === "production";
   return (
     <html lang="en" className="scroll-smooth bg-[#fafafa]">
       <head>
@@ -123,7 +124,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           expand={false}
           richColors
         />
-        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID!} />
+        {isProduction && process.env.NEXT_PUBLIC_GA_ID && (
+          <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
+        )}
       </body>
     </html>
   );
