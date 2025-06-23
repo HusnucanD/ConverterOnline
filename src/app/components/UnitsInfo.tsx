@@ -7,6 +7,8 @@ interface UnitsInfoProps {
   toId: string;
 }
 
+export const revalidate = false;
+
 export default function UnitsInfo({ units, fromId, toId }: UnitsInfoProps) {
   const fromUnit = units.find((unit) => unit.id == fromId);
   const toUnit = units.find((unit) => unit.id == toId);

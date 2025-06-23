@@ -1,0 +1,20 @@
+{
+  "id": "/",
+  "name": "Converter Online – Free Unit Converter",
+  "short_name": "Converter Online",
+  "description": "Convert 500+ units of length, mass, volume, pressure and more.",
+  "scope": "/",
+  "start_url": "/?source=pwa",
+  "display": "standalone",
+  "theme_color": "#d65c5c",
+  "background_color": "#fafafa",
+  "lang": "en-US",
+  "icons": [
+    {
+      "src": "/logo2.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
