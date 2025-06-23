@@ -12,9 +12,7 @@ export default function UnitsHeader() {
       >
         Convert any Unit
       </span>
-      <span className="bg-(--custom-card) px-2 rounded-xl border z-30 shadow-sm">
-        Fast, Free & Accurate
-      </span>
+      <span className="bg-(--custom-card) px-2 rounded-xl border z-30 shadow-sm">Fast, Free & Accurate</span>
     </h1>
   );
 }
