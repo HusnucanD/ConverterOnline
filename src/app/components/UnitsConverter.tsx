@@ -199,8 +199,11 @@ export default function UnitsConverter({ categories, units, fromId, toId }: Unit
                   {u.shortName}
                 </div>
                 <div className="text-sm font-semibold capitalize flex-1">{u.name}</div>
-                {u.standard.map((standard) => (
-                  <div className="text-xs font-medium capitalize bg-secondary text-secondary-foreground px-1 border-secondary-foreground border-1">
+                {u.standard.map((standard, index) => (
+                  <div
+                    key={index}
+                    className="text-xs font-medium capitalize bg-secondary text-secondary-foreground px-1 border-secondary-foreground border-1"
+                  >
                     {standard}
                   </div>
                 ))}
