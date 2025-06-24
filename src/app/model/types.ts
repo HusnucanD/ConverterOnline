@@ -11,6 +11,7 @@ export interface Unit {
   categoryId: string;
   conversions: Record<string, string>;
   description: string;
+  standard: string[];
 }
 
 export interface UnitsPayload {

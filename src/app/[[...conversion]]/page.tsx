@@ -62,18 +62,12 @@ export default async function Page({ params }: any) {
       const fromId = data.units.find((u) => slugify(u.name) === fromSlug)?.id || "";
       const toId = data.units.find((u) => slugify(u.name) === toSlug)?.id || "";
       if (fromId != "" && toId != "") {
-        const categoryId = data.units.find((unit) => unit.id == fromId)?.categoryId;
         return (
           <main className="w-full px-4 md:px-8 py-6 md:py-3">
             <div className="mx-auto max-w-5xl h-auto md:min-h-full flex flex-col gap-5 pb-10">
               <UnitsLogo />
               <UnitsHeader />
-              <UnitsConverter
-                categories={data.categories}
-                units={data.units.filter((u) => u.categoryId === categoryId)}
-                fromId={fromId}
-                toId={toId}
-              />
+              <UnitsConverter categories={data.categories} units={data.units} fromId={fromId} toId={toId} />
               {/* <AdsSection slot="2643060303" /> */}
               <UnitsInfo units={data.units} fromId={fromId} toId={toId} />
             </div>

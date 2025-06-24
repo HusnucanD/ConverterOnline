@@ -194,11 +194,16 @@ export default function UnitsConverter({ categories, units, fromId, toId }: Unit
                   : ""
               }`}
             >
-              <div>
-                <span className="text-base font-bold text-primary group-hover:text-accent-foreground capitalize text-shadow-2xs">
+              <div className="flex gap-2 items-center w-full">
+                <div className="text-base font-bold text-primary group-hover:text-accent-foreground capitalize text-shadow-2xs">
                   {u.shortName}
-                </span>
-                <span className="text-sm font-semibold capitalize ml-1">{u.name}</span>
+                </div>
+                <div className="text-sm font-semibold capitalize flex-1">{u.name}</div>
+                {u.standard.map((standard) => (
+                  <div className="text-xs font-medium capitalize bg-secondary text-secondary-foreground px-1 border-secondary-foreground border-1">
+                    {standard}
+                  </div>
+                ))}
               </div>
             </button>
           ))}
