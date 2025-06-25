@@ -69,7 +69,7 @@ export default async function Page({ params }: any) {
               <UnitsHeader />
               <UnitsConverter categories={data.categories} units={data.units} fromId={fromId} toId={toId} />
               {/* <AdsSection slot="2643060303" /> */}
-              <UnitsInfo units={data.units} fromId={fromId} toId={toId} />
+              <UnitsInfo categories={data.categories} units={data.units} fromId={fromId} toId={toId} />
             </div>
           </main>
         );

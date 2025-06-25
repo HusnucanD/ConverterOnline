@@ -2,6 +2,7 @@ export interface Category {
   id: string;
   name: string;
   logo: string;
+  description: string;
 }
 
 export interface Unit {
