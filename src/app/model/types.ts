@@ -12,7 +12,6 @@ export interface Unit {
   categoryId: string;
   conversions: Record<string, string>;
   description: string;
-  longDescription?: string;
   standard: string[];
 }
 
