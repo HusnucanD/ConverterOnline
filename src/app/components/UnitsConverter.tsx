@@ -118,10 +118,12 @@ export default function UnitsConverter({ categories, units, fromId, toId }: Unit
           </SelectTrigger>
           <SelectContent className="max-h-[30vh]">
             {categories.map((c) => (
-              <SelectItem key={c.id} value={c.id} className="cursor-pointer p-1 m group">
-                <span className="text-xl group-hover:bg-white/50 group-focus:bg-white/50 rounded-xl px-1">
-                  {c.logo}
-                </span>
+              <SelectItem key={c.id} value={c.id} className="cursor-pointer p-1 group gap-0">
+                <img
+                  src={`/images/${c.id}.png`}
+                  alt={`${c.name} logo`}
+                  className="group-hover:bg-white/50 group-focus:bg-white/50 rounded-xl p-1 inline-block w-8"
+                />
                 <span className="font-semibold capitalize">{c.name}</span>
               </SelectItem>
             ))}
@@ -177,9 +179,15 @@ export default function UnitsConverter({ categories, units, fromId, toId }: Unit
         </div>
       </Card>
       <Card className="w-full md:w-[50%] flex flex-col gap-2 p-5 h-111 bg-(--custom-card)">
-        <h2 className="text-xl font-bold">
+        {catId && (
+          <img
+            src={`/images/${catId}.png`}
+            alt={`${categories.find((c) => c.id === catId)?.name} logo`}
+            className="mx-auto inline-block w-[100px] h-[100px]"
+          />
+        )}
+        <h2 className="text-xl font-bold mx-auto">
           Units of <span className="capitalize">{categories.filter((x) => x.id == catId)[0]?.name}</span>
-          <span className="ml-1 text-2xl rounded-md">{categories.filter((x) => x.id == catId)[0]?.logo}</span>
         </h2>
         <div className="flex flex-col grow overflow-y-auto">
           {unitsInCategory.map((u) => (

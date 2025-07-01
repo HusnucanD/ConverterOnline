@@ -26,10 +26,12 @@ export default function UnitsInfo({ categories, units, fromId, toId }: UnitsInfo
               className="prose max-w-none text-[15px] font-medium whitespace-break-spaces"
               dangerouslySetInnerHTML={{ __html: category.description }}
             ></div>
-            {category.logo && (
-              <span className="absolute antialiased left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-[200px] opacity-20 pointer-events-none select-none">
-                {category.logo}
-              </span>
+            {category.id && (
+              <img
+                src={`/images/${category.id}.png`}
+                alt={`${category.name} logo`}
+                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[50%] opacity-20 pointer-events-none select-none"
+              />
             )}
           </div>
         </section>
