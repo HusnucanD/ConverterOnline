@@ -44,9 +44,9 @@ const slugify = (text: string): string => {
 
 const redirectToInitialConversion = async () => {
   const data: UnitsPayload = await getData();
-  const unitsInCategory1 = data.units.filter((unit) => unit.categoryId == data.categories[14].id);
+  const unitsInCategory1 = data.units.filter((unit) => unit.categoryId == data.categories[1].id);
   redirect(
-    `${slugify(unitsInCategory1[21].name)}-2-${slugify(unitsInCategory1[12].name)}`,
+    `${slugify(unitsInCategory1[1].name)}-2-${slugify(unitsInCategory1[0].name)}`,
     RedirectType.replace
   );
 };
