@@ -23,7 +23,7 @@ export default function UnitsInfo({ categories, units, fromId, toId }: UnitsInfo
           </h2>
           <div className="relative">
             <div
-              className="prose max-w-none text-[15px] font-medium whitespace-break-spaces"
+              className="prose max-w-none text-[14px] font-medium whitespace-break-spaces"
               dangerouslySetInnerHTML={{ __html: category.description }}
             ></div>
             {category.id && (
@@ -40,7 +40,7 @@ export default function UnitsInfo({ categories, units, fromId, toId }: UnitsInfo
             {fromUnit.name}
           </h3>
           <div
-            className="prose max-w-none text-[15px] font-medium whitespace-break-spaces"
+            className="prose max-w-none text-[14px] font-medium whitespace-break-spaces"
             dangerouslySetInnerHTML={{ __html: fromUnit.description }}
           ></div>
         </section>
@@ -49,7 +49,7 @@ export default function UnitsInfo({ categories, units, fromId, toId }: UnitsInfo
             {toUnit.name}
           </h3>
           <div
-            className="prose max-w-none text-[15px] font-medium whitespace-break-spaces"
+            className="prose max-w-none text-[14px] font-medium whitespace-break-spaces"
             dangerouslySetInnerHTML={{ __html: toUnit.description }}
           ></div>
         </section>

@@ -183,7 +183,7 @@ export default function UnitsConverter({ categories, units, fromId, toId }: Unit
           <img
             src={`/images/${catId}.png`}
             alt={`${categories.find((c) => c.id === catId)?.name} logo`}
-            className="mx-auto inline-block w-[100px] h-[100px]"
+            className="mx-auto inline-block w-[120px] h-[120px]"
           />
         )}
         <h2 className="text-xl font-bold mx-auto">
