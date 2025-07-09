@@ -105,6 +105,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className="scroll-smooth bg-[#fafafa]">
       <head>
         <meta name="google-adsense-account" content="ca-pub-9905948103459578"></meta>
+        <meta name="google-site-verification" content="cPVgIMAsDxSjg0j2t6Z_EldqsVnkysha1kQwwRJI6bc" />
       </head>
       <body className="bg-striped text-foreground selection:bg-primary selection:text-primary-foreground">
         <div className="md:min-h-screen antialiased flex md:pt-3">{children}</div>
