@@ -120,7 +120,7 @@ export default function UnitsConverter({ categories, units, fromId, toId }: Unit
             {categories.map((c) => (
               <SelectItem key={c.id} value={c.id} className="cursor-pointer p-1 group gap-0">
                 <img
-                  src={`/images/${c.id}.png`}
+                  src={`/images/minimized/${c.id}.webp`}
                   alt={`${c.name} logo`}
                   className="group-hover:bg-white/50 group-focus:bg-white/50 rounded-xl p-1 inline-block w-8"
                 />
@@ -181,7 +181,7 @@ export default function UnitsConverter({ categories, units, fromId, toId }: Unit
       <Card className="w-full md:w-[50%] flex flex-col gap-2 p-5 h-111 bg-(--custom-card)">
         {catId && (
           <img
-            src={`/images/${catId}.png`}
+            src={`/images/minimized/${catId}.webp`}
             alt={`${categories.find((c) => c.id === catId)?.name} logo`}
             className="mx-auto inline-block w-[120px] h-[120px]"
           />

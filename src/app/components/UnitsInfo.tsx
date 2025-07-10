@@ -28,7 +28,7 @@ export default function UnitsInfo({ categories, units, fromId, toId }: UnitsInfo
             ></div>
             {category.id && (
               <img
-                src={`/images/${category.id}.png`}
+                src={`/images/minimized/${category.id}.webp`}
                 alt={`${category.name} logo`}
                 className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] md:w-[50%] opacity-20 pointer-events-none select-none"
               />
