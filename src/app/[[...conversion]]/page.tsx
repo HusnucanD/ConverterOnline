@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
   };
 }
 
-export const revalidate = false;
+export const revalidate = 86_400;
 
 const slugify = (text: string): string => {
   return text
