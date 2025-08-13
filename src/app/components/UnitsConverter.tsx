@@ -2,6 +2,7 @@
 
 import { useMemo, useState, useEffect } from "react";
 import { usePathname, useRouter } from "next/navigation";
+import Link from "next/link";
 import { toast } from "sonner";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
@@ -30,6 +31,7 @@ export default function UnitsConverter({ categories, units, fromId, toId }: Unit
   const pathname = usePathname();
   const [catId, setCatId] = useState<string>();
   const unitsInCategory = useMemo(() => units.filter((u) => u.categoryId === catId), [units, catId]);
+  const fromUnit = useMemo(() => units.find((u) => u.id === fromId), [units, fromId]);
   const [inputVal, setInputVal] = useState<string>("1");
   const [outputVal, setOutputVal] = useState<string>("");
   useEffect(() => {
@@ -97,16 +99,6 @@ export default function UnitsConverter({ categories, units, fromId, toId }: Unit
       .catch(() => {
         toast.error("Failed to Copy");
       });
-  };
-  const handleUnitClick = (toUnitId: string) => {
-    const fromUnit = units.find((u) => u.id === fromId);
-    const toUnit = units.find((u) => u.id === toUnitId);
-    if (fromUnit && toUnit) {
-      const newPath = `/${slugify(fromUnit.name)}-2-${slugify(toUnit.name)}`;
-      if (pathname !== newPath) {
-        router.push(newPath, { scroll: false });
-      }
-    }
   };
   return (
     <div className="flex flex-col md:flex-row gap-6">
@@ -191,9 +183,11 @@ export default function UnitsConverter({ categories, units, fromId, toId }: Unit
         </h2>
         <div className="flex flex-col grow overflow-y-auto">
           {unitsInCategory.map((u) => (
-            <button
+            <Link
               key={u.id}
-              onClick={() => handleUnitClick(u.id)}
+              href={`/${slugify(fromUnit?.name ?? "")}-2-${slugify(u.name)}`}
+              prefetch
+              aria-label={`Convert ${fromUnit?.name ?? ""} to ${u.name}`}
               className={`text-left p-2 mr-3 rounded-md cursor-pointer flex align-middle hover:bg-accent hover:text-accent-foreground group ${
                 fromId === u.id || toId === u.id
                   ? fromId === u.id
@@ -216,7 +210,7 @@ export default function UnitsConverter({ categories, units, fromId, toId }: Unit
                   </div>
                 ))}
               </div>
-            </button>
+            </Link>
           ))}
         </div>
       </Card>

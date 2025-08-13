@@ -18,7 +18,7 @@ export default function UnitsInfo({ categories, units, fromId, toId }: UnitsInfo
     return (
       <Card className="flex flex-col gap-7 p-5 items-center bg-(--custom-card)">
         <section className="w-full">
-          <h2 className="font-semibold text-xl mb-4 text-primary-foreground bg-primary capitalize w-fit px-6 shadow mx-auto">
+          <h2 className="font-semibold text-2xl mb-4 text-primary-foreground bg-primary capitalize w-fit px-6 shadow mx-auto">
             {category.name}
           </h2>
           <div className="relative">
