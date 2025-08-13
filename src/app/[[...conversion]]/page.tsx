@@ -7,6 +7,7 @@ import UnitsInfo from "@/app/components/UnitsInfo";
 // import AdsSection from "@/app/components/AdsSection";
 import type { UnitsPayload } from "@/app/model/types";
 import { getData } from "@/lib/data";
+import CategoryLinks from "../components/CategoryLinks";
 
 export async function generateMetadata({ params }: any): Promise<Metadata> {
   let conversionTitle = "";
@@ -68,6 +69,7 @@ export default async function Page({ params }: any) {
               <UnitsLogo />
               <UnitsHeader />
               <UnitsConverter categories={data.categories} units={data.units} fromId={fromId} toId={toId} />
+              <CategoryLinks categories={data.categories} units={data.units} />
               {/* <AdsSection slot="2643060303" /> */}
               <UnitsInfo categories={data.categories} units={data.units} fromId={fromId} toId={toId} />
             </div>

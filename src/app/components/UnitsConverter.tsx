@@ -162,7 +162,7 @@ export default function UnitsConverter({ categories, units, fromId, toId }: Unit
         ></Input>
         <div
           onClick={() => handleResultClick()}
-          className="flex items-center justify-center text-xl font-bold rounded-md bg-primary text-primary-foreground mt-6 py-2 shadow h-11 cursor-pointer"
+          className="flex items-center justify-center text-xl font-bold rounded-md bg-accent text-primary-foreground mt-6 py-2 shadow h-11 cursor-pointer"
         >
           {outputVal}{" "}
           <span className="font-extrabold capitalize ml-2">
