@@ -1,5 +1,5 @@
-import { useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Card } from "@/components/ui/card";
 import type { Category, Unit } from "@/app/model/types";
 
@@ -54,10 +54,12 @@ export default function CategoryLinks({ categories, units }: CategoryLinksProps)
             aria-label={link.path}
             className="border shadow-xs px-2 py-1 bg-(--custom-card) text-sm font-semibold capitalize rounded-xl"
           >
-            <img
+            <Image
               src={`/images/minimized/${link.categoryId}.webp`}
               alt={`${link.name} logo`}
-              className="rounded-xl p-1 inline-block w-8 "
+              width={36}
+              height={36}
+              className="p-1 inline-block"
             />
             {link.name}
           </Link>
